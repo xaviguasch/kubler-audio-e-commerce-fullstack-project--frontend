@@ -1,4 +1,4 @@
-const DUMMY_DATA = [
+export const DUMMY_PRODUCTS = [
   {
     id: 1,
     slug: 'yx1-earphones',
