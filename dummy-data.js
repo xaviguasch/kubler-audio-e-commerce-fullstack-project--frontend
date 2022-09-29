@@ -539,7 +539,7 @@ export const DUMMY_PRODUCTS = [
   },
 ]
 
-export const COPY = {
+export const COPY_DATA = {
   hero: {
     tag: 'New product',
     productName: 'xx99 mark II headphones',
@@ -552,4 +552,33 @@ export const COPY = {
       mobile: '/assets/home/mobile/image-hero.jpg',
     },
   },
+}
+
+export const IMAGES_DATA = {
+  thumbnailRow: [
+    {
+      name: 'Headphones',
+      images: {
+        desktop: 'assets/shared/desktop/image-category-thumbnail-headphones.png',
+        tablet: 'assets/shared/tablet/image-category-thumbnail-headphones.png',
+        mobile: 'assets/shared/mobile/image-category-thumbnail-headphones.png',
+      },
+    },
+    {
+      name: 'Speakers',
+      images: {
+        desktop: 'assets/shared/desktop/image-category-speakers.png',
+        tablet: 'assets/shared/tablet/image-category-speakers.png',
+        mobile: 'assets/shared/mobile/image-category-speakers.png',
+      },
+    },
+    {
+      name: 'Earphones',
+      images: {
+        desktop: 'assets/shared/desktop/image-category-earphones.png',
+        tablet: 'assets/shared/tablet/image-category-earphones.png',
+        mobile: 'assets/shared/mobile/image-category-earphones.png',
+      },
+    },
+  ],
 }

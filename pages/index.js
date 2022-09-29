@@ -1,18 +1,15 @@
 import { DUMMY_PRODUCTS } from '../dummy-data'
-import { COPY } from '../dummy-data'
+import { COPY_DATA } from '../dummy-data'
+import { IMAGES_DATA } from '../dummy-data'
 
 import Hero from '../components/hero/hero'
+import ThumbnailRow from '../components/thumbnails/ThumbnailRow'
 
 function HomePage(props) {
   return (
     <div>
-      <Hero heroCopy={COPY.hero} />
-
-      <ul>
-        {DUMMY_PRODUCTS.map((prod) => (
-          <li key={prod.id}>{prod.name}</li>
-        ))}
-      </ul>
+      <Hero heroCopy={COPY_DATA.hero} />
+      <ThumbnailRow thumbnailData={IMAGES_DATA.thumbnailRow} />
     </div>
   )
 }
