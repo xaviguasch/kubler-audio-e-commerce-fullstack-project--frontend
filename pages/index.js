@@ -1,9 +1,12 @@
 import { DUMMY_PRODUCTS } from '../dummy-data'
+import { COPY } from '../dummy-data'
+
+import Hero from '../components/hero/hero'
 
 function HomePage(props) {
   return (
     <div>
-      <h1>KublerAudio Home Page!</h1>
+      <Hero />
 
       <ul>
         {DUMMY_PRODUCTS.map((prod) => (

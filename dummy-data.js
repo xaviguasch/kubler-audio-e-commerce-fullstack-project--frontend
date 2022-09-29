@@ -538,3 +538,18 @@ export const DUMMY_PRODUCTS = [
     ],
   },
 ]
+
+export const COPY = {
+  hero: {
+    tag: 'New product',
+    productName: 'xx99 mark II headphones',
+    productCopy:
+      'Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.',
+    buttonText: 'See product',
+    backgroundImg: {
+      desktop: '/assets/home/desktop/image-hero.jpg',
+      tablet: '/assets/home/tablet/image-hero.jpg',
+      mobile: '/assets/home/mobile/image-hero.jpg',
+    },
+  },
+}
