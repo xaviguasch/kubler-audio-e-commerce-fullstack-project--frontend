@@ -6,7 +6,7 @@ import Hero from '../components/hero/hero'
 function HomePage(props) {
   return (
     <div>
-      <Hero />
+      <Hero heroCopy={COPY.hero} />
 
       <ul>
         {DUMMY_PRODUCTS.map((prod) => (

@@ -1,7 +1,12 @@
-function Hero(props) {
+function Hero({ heroCopy }) {
+  const backgroundImgDesktop = heroCopy.backgroundImg.desktop
+
   return (
     <div>
-      <h1>Hero Component</h1>
+      <span>{heroCopy.tag}</span>
+      <h1>{heroCopy.productName}</h1>
+      <p>{heroCopy.productCopy}</p>
+      <a href='/'>{heroCopy.buttonText}</a>
     </div>
   )
 }
