@@ -1,9 +1,9 @@
-function HomePage(props) {
+function IndexPage(props) {
   return (
     <div>
-      <h1>Kubler Home Page!</h1>
+      <h1>KublerAudio Index Page!</h1>
     </div>
   )
 }
 
-export default HomePage
+export default IndexPage
