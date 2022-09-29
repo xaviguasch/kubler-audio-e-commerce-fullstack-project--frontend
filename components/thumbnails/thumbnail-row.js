@@ -1,6 +1,6 @@
-import classes from './ThumbnailRow.module.css'
+import classes from './thumbnail-row.module.css'
 
-import ThumbnailItem from './ThumbnailItem'
+import ThumbnailItem from './thumbnail-item'
 
 function ThumbnailRow({ thumbnailData }) {
   return (

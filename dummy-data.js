@@ -552,6 +552,35 @@ export const COPY_DATA = {
       mobile: '/assets/home/mobile/image-hero.jpg',
     },
   },
+  showcase: {
+    speakerZx9: {
+      name: 'ZX9 Speaker',
+      copy: 'Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.',
+      images: {
+        desktop: 'assets/home/desktop/image-speaker-zx9.png',
+        tablet: 'assets/home/tablet/image-speaker-zx9.png',
+        mobile: 'assets/home/mobile/image-speaker-zx9.png',
+      },
+    },
+    yx1Earphones: {
+      name: 'YX1 Earphones',
+
+      images: {
+        desktop: 'assets/home/desktop/image-earphones-yx1.jpg',
+        tablet: 'assets/home/tablet/image-earphones-yx1.jpg',
+        mobile: 'assets/home/mobile/image-earphones-yx1.jpg',
+      },
+    },
+
+    speakerZx7: {
+      name: 'ZX7 Speaker',
+      images: {
+        desktop: 'assets/home/desktop/image-speaker-zx7.jpg',
+        tablet: 'assets/home/tablet/image-speaker-zx7.jpg',
+        mobile: 'assets/home/mobile/image-speaker-zx7.jpg',
+      },
+    },
+  },
 }
 
 export const IMAGES_DATA = {

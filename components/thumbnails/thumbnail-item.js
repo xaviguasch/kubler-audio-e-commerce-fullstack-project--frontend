@@ -1,4 +1,4 @@
-import classes from './ThumbnailItem.module.css'
+import classes from './thumbnail-item.module.css'
 
 function ThumbnailItem({ thumbnailItemData }) {
   const thumbnailImgs = thumbnailItemData.images
