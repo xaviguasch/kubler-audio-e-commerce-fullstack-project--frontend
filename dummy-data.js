@@ -581,6 +581,15 @@ export const COPY_DATA = {
       },
     },
   },
+  companyMotto: {
+    title: 'Bringing you the best audio gear',
+    copy: 'Located at the heart of New York City, KublerAudio is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make KublerAudio the best place to buy your portable audio equipment.',
+    images: {
+      desktop: 'assets/shared/desktop/image-best-gear.jpg',
+      tablet: 'assets/shared/tablet/image-best-gear.jpg',
+      mobile: 'assets/shared/mobile/image-best-gear.jpg',
+    },
+  },
 }
 
 export const IMAGES_DATA = {
