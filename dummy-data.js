@@ -593,7 +593,7 @@ export const COPY_DATA = {
   footerCopy: {
     title: 'KublerAudio',
     copy: "KublerAudio is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we're open 7 days a week.",
-    copyright: 'Copyright 2021. All Rights Reserved',
+    copyright: 'Copyright 2022. All Rights Reserved',
   },
 }
 

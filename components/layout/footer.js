@@ -1,6 +1,9 @@
 import React from 'react'
 
+import IconsGroup from '../ui/icons-group'
+
 import { COPY_DATA } from '../../dummy-data'
+import Navigation from '../ui/Navigation'
 
 function Footer() {
   return (
@@ -10,6 +13,8 @@ function Footer() {
         <p>{COPY_DATA.footerCopy.copy}</p>
         <span>{COPY_DATA.footerCopy.copyright}</span>
       </div>
+      <Navigation />
+      <IconsGroup />
     </div>
   )
 }
