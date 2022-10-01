@@ -1,4 +1,3 @@
-import { DUMMY_PRODUCTS } from '../dummy-data'
 import { COPY_DATA } from '../dummy-data'
 import { MAPPING_DATA } from '../dummy-data'
 
@@ -7,17 +6,29 @@ import ThumbnailRow from '../components/thumbnails/thumbnail-row'
 import Showcase from '../components/showcase/showcase'
 import CompanyMotto from '../components/company-motto/company-motto'
 
-function HomePage(props) {
+function HomePage({ copyData, mappingData }) {
+  console.log(copyData)
   return (
     <div>
-      <Hero heroCopy={COPY_DATA.hero} />
-      <ThumbnailRow thumbnailData={MAPPING_DATA.thumbnailRow} />
+      <Hero heroCopy={copyData.hero} />
+      <ThumbnailRow thumbnailData={mappingData.thumbnailRow} />
 
-      <Showcase showcaseData={COPY_DATA.showcase} />
+      <Showcase showcaseData={copyData.showcase} />
 
-      <CompanyMotto companyMottoData={COPY_DATA.companyMotto} />
+      <CompanyMotto companyMottoData={copyData.companyMotto} />
     </div>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      copyData: COPY_DATA,
+      mappingData: MAPPING_DATA,
+    },
+    revalidate: 1800, // If a new requests comes 30min after the last time
+    // the page was generated, then it will be
+  }
 }
 
 export default HomePage

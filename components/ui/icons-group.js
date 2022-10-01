@@ -4,20 +4,19 @@ import Link from 'next/link'
 
 import classes from './icons-group.module.css'
 
-import { ReactComponent as FacebookIcon } from '../../public/assets/shared/desktop/icon-facebook.svg'
-
-function IconsGroup() {
+function IconsGroup({ socialIcons }) {
+  console.log(socialIcons)
   return (
     <ul className={classes.IconsGroup}>
       <li>
         <Link href='/'>
-          <img src={'./assets/shared/desktop/icon-facebook.svg'} alt='' />
+          <img src={socialIcons.facebook} alt='' />
         </Link>
         <Link href='/'>
-          <img src={'./assets/shared/desktop/icon-twitter.svg'} alt='' />
+          <img src={socialIcons.instagram} alt='' />
         </Link>
         <Link href='/'>
-          <img src={'./assets/shared/desktop/icon-instagram.svg'} alt='' />
+          <img src={socialIcons.twitter} alt='' />
         </Link>
       </li>
     </ul>

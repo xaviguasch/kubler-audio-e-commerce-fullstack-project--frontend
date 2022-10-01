@@ -8,6 +8,7 @@ const CompanyMotto = ({ companyMottoData }) => {
         <p>{companyMottoData.copy}</p>
       </div>
       <div>
+        {' '}
         <img src={companyMottoData.images.desktop} alt='' />
       </div>
     </div>

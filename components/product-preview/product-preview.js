@@ -1,7 +1,9 @@
 import React from 'react'
 
 function ProductPreview({ ppData }) {
-  const { name, description, image, tag, isReveresed } = ppData
+  const { name, description, images, tag, isReveresed } = ppData
+
+  console.log(ppData)
 
   return (
     <div>
@@ -13,7 +15,7 @@ function ProductPreview({ ppData }) {
         <a href='/'>See product</a>
       </div>
       <div>
-        <img src={image} alt='' />
+        <img src={images.desktop} alt='' />
       </div>
     </div>
   )

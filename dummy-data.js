@@ -557,27 +557,27 @@ export const COPY_DATA = {
       name: 'ZX9 Speaker',
       copy: 'Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.',
       images: {
-        desktop: 'assets/home/desktop/image-speaker-zx9.png',
-        tablet: 'assets/home/tablet/image-speaker-zx9.png',
-        mobile: 'assets/home/mobile/image-speaker-zx9.png',
+        desktop: '/assets/home/desktop/image-speaker-zx9.png',
+        tablet: '/assets/home/tablet/image-speaker-zx9.png',
+        mobile: '/assets/home/mobile/image-speaker-zx9.png',
       },
     },
     yx1Earphones: {
       name: 'YX1 Earphones',
 
       images: {
-        desktop: 'assets/home/desktop/image-earphones-yx1.jpg',
-        tablet: 'assets/home/tablet/image-earphones-yx1.jpg',
-        mobile: 'assets/home/mobile/image-earphones-yx1.jpg',
+        desktop: '/assets/home/desktop/image-earphones-yx1.jpg',
+        tablet: '/assets/home/tablet/image-earphones-yx1.jpg',
+        mobile: '/assets/home/mobile/image-earphones-yx1.jpg',
       },
     },
 
     speakerZx7: {
       name: 'ZX7 Speaker',
       images: {
-        desktop: 'assets/home/desktop/image-speaker-zx7.jpg',
-        tablet: 'assets/home/tablet/image-speaker-zx7.jpg',
-        mobile: 'assets/home/mobile/image-speaker-zx7.jpg',
+        desktop: '/assets/home/desktop/image-speaker-zx7.jpg',
+        tablet: '/assets/home/tablet/image-speaker-zx7.jpg',
+        mobile: '/assets/home/mobile/image-speaker-zx7.jpg',
       },
     },
   },
@@ -585,15 +585,22 @@ export const COPY_DATA = {
     title: 'Bringing you the best audio gear',
     copy: 'Located at the heart of New York City, KublerAudio is the premier store for high end headphones, earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms available for you to browse and experience a wide range of our products. Stop by our store to meet some of the fantastic people who make KublerAudio the best place to buy your portable audio equipment.',
     images: {
-      desktop: 'assets/shared/desktop/image-best-gear.jpg',
-      tablet: 'assets/shared/tablet/image-best-gear.jpg',
-      mobile: 'assets/shared/mobile/image-best-gear.jpg',
+      desktop: '/assets/shared/desktop/image-best-gear.jpg',
+      tablet: '/assets/shared/tablet/image-best-gear.jpg',
+      mobile: '/assets/shared/mobile/image-best-gear.jpg',
     },
   },
   footerCopy: {
     title: 'KublerAudio',
     copy: "KublerAudio is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we're open 7 days a week.",
     copyright: 'Copyright 2022. All Rights Reserved',
+  },
+  socialIcons: {
+    arrowRight: '/assets/shared/desktop/icon-arrow-right.svg',
+    cart: '/assets/shared/desktop/icon-cart.svg',
+    facebook: '/assets/shared/desktop/icon-facebook.svg',
+    instagram: '/assets/shared/desktop/icon-instagram.svg',
+    twitter: '/assets/shared/desktop/icon-twitter.svg',
   },
 }
 
@@ -602,25 +609,25 @@ export const MAPPING_DATA = {
     {
       name: 'Headphones',
       images: {
-        desktop: 'assets/shared/desktop/image-category-thumbnail-headphones.png',
-        tablet: 'assets/shared/tablet/image-category-thumbnail-headphones.png',
-        mobile: 'assets/shared/mobile/image-category-thumbnail-headphones.png',
+        desktop: '/assets/shared/desktop/image-category-thumbnail-headphones.png',
+        tablet: '/assets/shared/tablet/image-category-thumbnail-headphones.png',
+        mobile: '/assets/shared/mobile/image-category-thumbnail-headphones.png',
       },
     },
     {
       name: 'Speakers',
       images: {
-        desktop: 'assets/shared/desktop/image-category-speakers.png',
-        tablet: 'assets/shared/tablet/image-category-speakers.png',
-        mobile: 'assets/shared/mobile/image-category-speakers.png',
+        desktop: '/assets/shared/desktop/image-category-thumbnail-speakers.png',
+        tablet: '/assets/shared/tablet/image-category-thumbnail-speakers.png',
+        mobile: '/assets/shared/mobile/image-category-thumbnail-speakers.png',
       },
     },
     {
       name: 'Earphones',
       images: {
-        desktop: 'assets/shared/desktop/image-category-earphones.png',
-        tablet: 'assets/shared/tablet/image-category-earphones.png',
-        mobile: 'assets/shared/mobile/image-category-earphones.png',
+        desktop: '/assets/shared/desktop/image-category-thumbnail-earphones.png',
+        tablet: '/assets/shared/tablet/image-category-thumbnail-earphones.png',
+        mobile: '/assets/shared/mobile/image-category-thumbnail-earphones.png',
       },
     },
   ],
@@ -633,11 +640,11 @@ export const MAPPING_DATA = {
           'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.',
         images: {
           desktop:
-            'assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg',
+            '/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg',
           tablet:
-            'assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg',
+            '/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg',
           mobile:
-            'assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg',
+            '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg',
         },
       },
       {
@@ -646,11 +653,11 @@ export const MAPPING_DATA = {
           'As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.',
         images: {
           desktop:
-            'assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg',
+            '/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg',
           tablet:
-            'assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg',
+            '/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg',
           mobile:
-            'assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg',
+            '/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg',
         },
       },
       {
@@ -659,9 +666,11 @@ export const MAPPING_DATA = {
           'Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.',
         images: {
           desktop:
-            'assets/product-xx59-headphones/desktop/image-category-page-preview.jpg',
-          tablet: 'assets/product-xx59-headphones/tablet/image-category-page-preview.jpg',
-          mobile: 'assets/product-xx59-headphones/mobile/image-category-page-preview.jpg',
+            '/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg',
+          tablet:
+            '/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg',
+          mobile:
+            '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg',
         },
       },
     ],
@@ -673,9 +682,9 @@ export const MAPPING_DATA = {
         description:
           'Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.',
         images: {
-          desktop: 'assets/product-zx9-speaker/desktop/image-category-page-preview.jpg',
-          tablet: 'assets/product-zx9-speaker/tablet/image-category-page-preview.jpg',
-          mobile: 'assets/product-zx9-speaker/mobile/image-category-page-preview.jpg',
+          desktop: '/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg',
+          tablet: '/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg',
+          mobile: '/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg',
         },
       },
       {
@@ -683,9 +692,9 @@ export const MAPPING_DATA = {
         description:
           'Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.',
         images: {
-          desktop: 'assets/product-zx7-speaker/desktop/image-category-page-preview.jpg',
-          tablet: 'assets/product-zx7-speaker/tablet/image-category-page-preview.jpg',
-          mobile: 'assets/product-zx7-speaker/mobile/image-category-page-preview.jpg',
+          desktop: '/assets/product-zx7-speaker/desktop/image-category-page-preview.jpg',
+          tablet: '/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg',
+          mobile: '/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg',
         },
       },
     ],
@@ -697,9 +706,10 @@ export const MAPPING_DATA = {
         description:
           'Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.',
         images: {
-          desktop: 'assets/product-yx1-earphones/desktop/image-category-page-preview.jpg',
-          tablet: 'assets/product-yx1-earphones/tablet/image-category-page-preview.jpg',
-          mobile: 'assets/product-yx1-earphones/mobile/image-category-page-preview.jpg',
+          desktop:
+            '/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg',
+          tablet: '/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg',
+          mobile: '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg',
         },
       },
     ],

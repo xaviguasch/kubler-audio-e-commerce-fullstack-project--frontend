@@ -7,6 +7,7 @@ function Hero({ heroCopy }) {
       <h1>{heroCopy.productName}</h1>
       <p>{heroCopy.productCopy}</p>
       <a href='/'>{heroCopy.buttonText}</a>
+      <img src={backgroundImgDesktop} alt='' />
     </div>
   )
 }

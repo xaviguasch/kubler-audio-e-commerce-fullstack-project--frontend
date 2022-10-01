@@ -5,16 +5,16 @@ import IconsGroup from '../ui/icons-group'
 import { COPY_DATA } from '../../dummy-data'
 import Navigation from '../ui/Navigation'
 
-function Footer() {
+function Footer({ copyData }) {
   return (
     <div>
       <div>
-        <h3>{COPY_DATA.footerCopy.title}</h3>
-        <p>{COPY_DATA.footerCopy.copy}</p>
-        <span>{COPY_DATA.footerCopy.copyright}</span>
+        <h3>{copyData.footerCopy.title}</h3>
+        <p>{copyData.footerCopy.copy}</p>
+        <span>{copyData.footerCopy.copyright}</span>
       </div>
       <Navigation />
-      <IconsGroup />
+      <IconsGroup socialIcons={copyData.socialIcons} />
     </div>
   )
 }

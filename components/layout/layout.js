@@ -8,7 +8,7 @@ function Layout(props) {
     <Fragment>
       <Header />
       <main>{props.children}</main>
-      <Footer />
+      <Footer copyData={props.copyData} />
     </Fragment>
   )
 }

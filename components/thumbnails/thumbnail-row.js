@@ -3,8 +3,6 @@ import classes from './thumbnail-row.module.css'
 import ThumbnailItem from './thumbnail-item'
 
 function ThumbnailRow({ thumbnailData }) {
-  console.log(thumbnailData)
-
   return (
     <div>
       <ul>
