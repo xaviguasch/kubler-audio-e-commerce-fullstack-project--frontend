@@ -1,11 +1,12 @@
 import React from 'react'
 
-function ProductPreview({ productData }) {
-  // const { name, description, image, tag, isReveresed } = productData
+function ProductPreview({ ppData }) {
+  const { name, description, image, tag, isReveresed } = ppData
+
   return (
     <div>
       <p>product preview</p>
-      {/* <div>
+      <div>
         {tag && <span>{tag}</span>}
         <h2>{name}</h2>
         <p>{description}</p>
@@ -13,7 +14,7 @@ function ProductPreview({ productData }) {
       </div>
       <div>
         <img src={image} alt='' />
-      </div> */}
+      </div>
     </div>
   )
 }

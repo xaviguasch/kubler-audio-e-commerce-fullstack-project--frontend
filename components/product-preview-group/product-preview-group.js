@@ -1,11 +1,12 @@
 import ProductPreview from '../product-preview/product-preview'
 
-function ProductPreviewGroup() {
+function ProductPreviewGroup({ previewData }) {
+  console.log(previewData)
   return (
     <div>
-      <ProductPreview />
-      <ProductPreview />
-      <ProductPreview />
+      {previewData.map((pData) => (
+        <ProductPreview key={pData.name} ppData={pData} />
+      ))}
     </div>
   )
 }
