@@ -2,7 +2,6 @@ import React from 'react'
 
 import IconsGroup from '../ui/icons-group'
 
-import { COPY_DATA } from '../../dummy-data'
 import Navigation from '../ui/Navigation'
 
 function Footer({ copyData }) {

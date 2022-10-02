@@ -5,7 +5,6 @@ import Link from 'next/link'
 import classes from './icons-group.module.css'
 
 function IconsGroup({ socialIcons }) {
-  console.log(socialIcons)
   return (
     <ul className={classes.IconsGroup}>
       <li>

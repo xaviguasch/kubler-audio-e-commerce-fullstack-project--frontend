@@ -8,10 +8,6 @@ const CategoryProjectPage = ({ mappingData, copyData }) => {
   const router = useRouter()
 
   const { family } = router.query
-  console.log('=====================')
-  const image = mappingData.thumbnailRow[0].images.desktop
-  console.log(image)
-  console.log('=====================')
 
   return (
     <div>
@@ -30,11 +26,11 @@ const CategoryProjectPage = ({ mappingData, copyData }) => {
 export async function getStaticProps(context) {
   const family = context.params.family
 
-  if (!family) {
-    return {
-      notFound: true,
-    }
-  }
+  // if (!family) {
+  //   return {
+  //     notFound: true,
+  //   }
+  // }
 
   return {
     props: {
