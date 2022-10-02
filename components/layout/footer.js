@@ -13,7 +13,7 @@ function Footer({ copyData }) {
         <span>{copyData.footerCopy.copyright}</span>
       </div>
       <Navbar position='nav_header' />
-      <IconsGroup icons={copyData.icons} />
+      <IconsGroup />
     </div>
   )
 }

@@ -5,15 +5,17 @@ import Navbar from '../ui/navbar'
 
 import classes from './header.module.css'
 
-function Header({ icons }) {
+import IconCartSVG from '../../public/assets/icons/icon-cart.svg'
+
+function Header() {
   return (
     <header className={`${classes.Header} h-padding`}>
-      <Navbar position='nav_header' hamburgerIcon={icons.hamburger} />
+      <Navbar position='nav_header' />
 
       <h2 className='logo'>KublerAudio</h2>
 
       <Link href='/'>
-        <img src={icons.iconCart} alt='' />
+        <IconCartSVG />
       </Link>
     </header>
   )

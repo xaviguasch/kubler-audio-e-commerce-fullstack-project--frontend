@@ -4,11 +4,13 @@ import classes from './navbar.module.css'
 
 import Link from 'next/link'
 
-function Navbar({ position, hamburgerIcon }) {
+import HamburgerSVG from '../../public/assets/icons/icon-hamburger.svg'
+
+function Navbar({ position }) {
   return (
     <nav className={classes.Navbar}>
       <div className='hamburger'>
-        <img src={hamburgerIcon} alt='' />
+        <HamburgerSVG />
       </div>
       <ul className={classes.hidden}>
         <li>

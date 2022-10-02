@@ -548,8 +548,8 @@ export const COPY_DATA = {
     buttonText: 'See product',
     backgroundImg: {
       desktop: '/assets/home/desktop/image-hero.jpg',
-      tablet: '/assets/home/tablet/image-hero.jpg',
-      mobile: '/assets/home/mobile/image-hero.jpg',
+      tablet: '/assets/home/tablet/image-header.jpg',
+      mobile: '/assets/home/mobile/image-header.jpg',
     },
   },
   showcase: {

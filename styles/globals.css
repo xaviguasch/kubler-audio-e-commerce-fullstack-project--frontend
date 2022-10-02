@@ -111,15 +111,13 @@ ul {
 }
 
 .title--xl {
+  font-size: var(--fs-40);
+  letter-spacing: 1.3px;
 }
 
 .title--s {
   font-size: var(--fs-28);
   letter-spacing: 1.07px;
-}
-
-.title__white {
-  color: var(--clr-white);
 }
 
 .text {
@@ -142,6 +140,10 @@ ul {
   color: var(--clr-white);
   font-size: var(--fs-20);
   line-height: 1;
+}
+
+.helper__white {
+  color: var(--clr-white);
 }
 
 /* ======================== */

@@ -1,13 +1,18 @@
-function Hero({ heroCopy }) {
-  const backgroundImgDesktop = heroCopy.backgroundImg.desktop
+import Link from 'next/link'
 
+function Hero({ heroCopy }) {
   return (
-    <div>
-      <span>{heroCopy.tag}</span>
-      <h1>{heroCopy.productName}</h1>
-      <p>{heroCopy.productCopy}</p>
-      <a href='/'>{heroCopy.buttonText}</a>
-      <img src={backgroundImgDesktop} alt='' />
+    <div
+      style={{
+        backgroundImage: `url(${heroCopy.backgroundImg.mobile})`,
+      }}
+    >
+      <div className='copy'>
+        <span>{heroCopy.tag}</span>
+        <h1>{heroCopy.productName}</h1>
+        <p>{heroCopy.productCopy}</p>
+        <Link href='/'>{heroCopy.buttonText}</Link>
+      </div>
     </div>
   )
 }

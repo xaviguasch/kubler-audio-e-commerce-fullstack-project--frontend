@@ -4,18 +4,22 @@ import Link from 'next/link'
 
 import classes from './icons-group.module.css'
 
-function IconsGroup({ icons }) {
+import FacebookSVG from '../../public/assets/icons/icon-facebook.svg'
+import TwitterSVG from '../../public/assets/icons/icon-twitter.svg'
+import InstagramSVG from '../../public/assets/icons/icon-instagram.svg'
+
+function IconsGroup() {
   return (
     <ul className={classes.IconsGroup}>
       <li>
         <Link href='/'>
-          <img src={icons.facebook} alt='' />
+          <FacebookSVG />
         </Link>
         <Link href='/'>
-          <img src={icons.twitter} alt='' />
+          <TwitterSVG />
         </Link>
         <Link href='/'>
-          <img src={icons.instagram} alt='' />
+          <InstagramSVG className={classes.ig} />
         </Link>
       </li>
     </ul>
