@@ -7,10 +7,10 @@ import classes from './header.module.css'
 
 function Header({ icons }) {
   return (
-    <header className={classes.Header}>
+    <header className={`${classes.Header} h-padding`}>
       <Navbar position='nav_header' hamburgerIcon={icons.hamburger} />
 
-      <h2 className={classes.logo}>KublerAudio</h2>
+      <h2 className='logo'>KublerAudio</h2>
 
       <Link href='/'>
         <img src={icons.iconCart} alt='' />
