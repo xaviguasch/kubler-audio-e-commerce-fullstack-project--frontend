@@ -4,18 +4,18 @@ import Link from 'next/link'
 
 import classes from './icons-group.module.css'
 
-function IconsGroup({ socialIcons }) {
+function IconsGroup({ icons }) {
   return (
     <ul className={classes.IconsGroup}>
       <li>
         <Link href='/'>
-          <img src={socialIcons.facebook} alt='' />
+          <img src={icons.facebook} alt='' />
         </Link>
         <Link href='/'>
-          <img src={socialIcons.instagram} alt='' />
+          <img src={icons.twitter} alt='' />
         </Link>
         <Link href='/'>
-          <img src={socialIcons.twitter} alt='' />
+          <img src={icons.instagram} alt='' />
         </Link>
       </li>
     </ul>

@@ -1,21 +1,20 @@
+import React, { useState } from 'react'
+
 import Link from 'next/link'
-import Navigation from '../ui/navigation'
+import Navbar from '../ui/navbar'
 
 import classes from './header.module.css'
 
-function Header() {
+function Header({ icons }) {
   return (
-    <header className={classes.header}>
-      <Link href='/'>
-        <a>
-          <div className={classes.logo}>KublerAudio</div>
-        </a>
-      </Link>
-      <nav>
-        <Navigation />
+    <header className={classes.Header}>
+      <Navbar position='nav_header' hamburgerIcon={icons.hamburger} />
 
-        <button>Shop</button>
-      </nav>
+      <h2 className={classes.logo}>KublerAudio</h2>
+
+      <Link href='/'>
+        <img src={icons.iconCart} alt='' />
+      </Link>
     </header>
   )
 }

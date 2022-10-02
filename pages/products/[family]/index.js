@@ -26,12 +26,6 @@ const CategoryProjectPage = ({ mappingData, copyData }) => {
 export async function getStaticProps(context) {
   const family = context.params.family
 
-  // if (!family) {
-  //   return {
-  //     notFound: true,
-  //   }
-  // }
-
   return {
     props: {
       mappingData: MAPPING_DATA,

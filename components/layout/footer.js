@@ -2,7 +2,7 @@ import React from 'react'
 
 import IconsGroup from '../ui/icons-group'
 
-import Navigation from '../ui/Navigation'
+import Navbar from '../ui/navbar'
 
 function Footer({ copyData }) {
   return (
@@ -12,8 +12,8 @@ function Footer({ copyData }) {
         <p>{copyData.footerCopy.copy}</p>
         <span>{copyData.footerCopy.copyright}</span>
       </div>
-      <Navigation />
-      <IconsGroup socialIcons={copyData.socialIcons} />
+      <Navbar position='nav_header' />
+      <IconsGroup icons={copyData.icons} />
     </div>
   )
 }

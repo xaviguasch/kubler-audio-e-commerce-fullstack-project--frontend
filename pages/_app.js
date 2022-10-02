@@ -1,3 +1,5 @@
+// Later we will have to fetch this from the client because
+// here we can't use getStaticProps, we will have to do useEffect()
 import { COPY_DATA } from '../dummy-data'
 
 import Layout from '../components/layout/layout'

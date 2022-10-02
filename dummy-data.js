@@ -595,14 +595,16 @@ export const COPY_DATA = {
     copy: "KublerAudio is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we're open 7 days a week.",
     copyright: 'Copyright 2022. All Rights Reserved',
   },
-  socialIcons: {
-    arrowRight: '/assets/shared/desktop/icon-arrow-right.svg',
-    cart: '/assets/shared/desktop/icon-cart.svg',
-    facebook: '/assets/shared/desktop/icon-facebook.svg',
-    instagram: '/assets/shared/desktop/icon-instagram.svg',
-    twitter: '/assets/shared/desktop/icon-twitter.svg',
+  icons: {
+    arrowRight: '/assets/icons/icon-arrow-right.svg',
+    iconCart: '/assets/icons/icon-cart.svg',
+    facebook: '/assets/icons/icon-facebook.svg',
+    hamburger: '/assets/icons/icon-hamburger.svg',
+    instagram: '/assets/icons/icon-instagram.svg',
+    twitter: '/assets/icons/icon-twitter.svg',
+    patternCircles: '/assets/icons/pattern-circles.svg',
+    iconCashOnDelivery: '/assets/icons/icon-cash-on-delivery.svg',
   },
-  iconHamburger: '/assets/shared/tablet/icon-hamburger.svg',
 }
 
 export const MAPPING_DATA = {
