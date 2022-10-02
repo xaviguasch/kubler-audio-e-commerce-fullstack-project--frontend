@@ -6,7 +6,7 @@ import Footer from './footer'
 function Layout(props) {
   return (
     <Fragment>
-      <Header />
+      <Header copyData={props.copyData} />
       <main>{props.children}</main>
       <Footer copyData={props.copyData} />
     </Fragment>

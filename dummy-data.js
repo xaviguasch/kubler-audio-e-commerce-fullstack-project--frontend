@@ -602,6 +602,7 @@ export const COPY_DATA = {
     instagram: '/assets/shared/desktop/icon-instagram.svg',
     twitter: '/assets/shared/desktop/icon-twitter.svg',
   },
+  iconHamburger: '/assets/shared/tablet/icon-hamburger.svg',
 }
 
 export const MAPPING_DATA = {

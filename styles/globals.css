@@ -1,16 +1,93 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+/* ================== */
+/* Custom properties */
+/* ================== */
+
+:root {
+  --ff-main: 'Manrope', sans-serif;
+
+  /* --fw-light: 300; */
+  --fw-regular: 400;
+  /* --fw-medium: 500; */
+  /* --fw-semi-bold: 600; */
+  --fw-bold: 700;
+
+  --fs-07: 0.438rem;
+  --fs-08: 0.5em;
+  --fs-09: 0.563em;
+  --fs-10: 0.625rem;
+  --fs-11: 0.688em;
+  --fs-12: 0.75rem;
+  --fs-13: 0.813rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.938rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-26: 1.625rem;
+  --fs-28: 1.75rem;
+  --fs-30: 1.875em;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-48: 3rem;
+  --fs-50: 3.125em;
+  --fs-56: 3.5rem;
+  --fs-60: 3.75rem;
+  --fs-64: 4rem;
+  --fs-72: 4.5rem;
+  --fs-80: 5rem;
+
+  /* Basics */
+  --clr-black: hsla(0, 0%, 0%, 1);
+  --clr-white: hsla(0, 0%, 100%, 1);
+
+  /* Text */
+  --clr-black-diluted-text: hsla(0, 0%, 0%, 0.5);
+
+  /* Elements */
+  --clr-grey-el: hsla(0, 0%, 95%, 1);
+  --clr-orange-matte-el: hsla(22, 65%, 57%, 1);
+  --clr-orange-diluted-el: hsla(22, 93%, 75%, 1);
+  --clr-black-dark-el: hsla(0, 0%, 6%, 1);
+
+  /* Background  */
+  --clr-grey-clear-bg: hsla(0, 0%, 98%, 1);
+
+  /* Others */
+}
+
+body {
+  background: var(--clr-grey-clear-bg);
+
+  color: var(--clr-black);
+  font-family: var(--ff-main);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-regular);
+  line-height: 1.875;
+  text-align: left;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ================== */
+/* Typography */
+/* ================== */
