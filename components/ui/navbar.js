@@ -14,16 +14,24 @@ function Navbar({ position }) {
       </div>
       <ul className={classes.hidden}>
         <li>
-          <Link href='/home'>home</Link>
+          <Link href='/home'>
+            <a>Home</a>
+          </Link>
         </li>
         <li>
-          <Link href='/headphones'>headphones</Link>
+          <Link href='/headphones'>
+            <a>Headphones</a>
+          </Link>
         </li>
         <li>
-          <Link href='/speakers'>speakers</Link>
+          <Link href='/speakers'>
+            <a>Speakers</a>
+          </Link>
         </li>
         <li>
-          <Link href='/earphones'>earphones</Link>
+          <Link href='/earphones'>
+            <a>Headphones</a>
+          </Link>
         </li>
       </ul>
     </nav>

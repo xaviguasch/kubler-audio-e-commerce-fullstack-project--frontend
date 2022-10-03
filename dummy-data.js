@@ -611,27 +611,15 @@ export const MAPPING_DATA = {
   thumbnailRow: [
     {
       name: 'Headphones',
-      images: {
-        desktop: '/assets/shared/desktop/image-category-thumbnail-headphones.png',
-        tablet: '/assets/shared/tablet/image-category-thumbnail-headphones.png',
-        mobile: '/assets/shared/mobile/image-category-thumbnail-headphones.png',
-      },
+      thumbnailImg: '/assets/shared/desktop/image-category-thumbnail-headphones.png',
     },
     {
       name: 'Speakers',
-      images: {
-        desktop: '/assets/shared/desktop/image-category-thumbnail-speakers.png',
-        tablet: '/assets/shared/tablet/image-category-thumbnail-speakers.png',
-        mobile: '/assets/shared/mobile/image-category-thumbnail-speakers.png',
-      },
+      thumbnailImg: '/assets/shared/desktop/image-category-thumbnail-speakers.png',
     },
     {
       name: 'Earphones',
-      images: {
-        desktop: '/assets/shared/desktop/image-category-thumbnail-earphones.png',
-        tablet: '/assets/shared/tablet/image-category-thumbnail-earphones.png',
-        mobile: '/assets/shared/mobile/image-category-thumbnail-earphones.png',
-      },
+      thumbnailImg: '/assets/shared/desktop/image-category-thumbnail-earphones.png',
     },
   ],
   productPreviews: {

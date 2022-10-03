@@ -1,0 +1,10 @@
+.ThumbnailRow {
+  padding-top: 40px;
+}
+
+.thumbnailList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}

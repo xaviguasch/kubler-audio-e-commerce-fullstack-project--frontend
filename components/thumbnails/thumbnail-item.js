@@ -1,13 +1,22 @@
+import Link from 'next/link'
+
 import classes from './thumbnail-item.module.css'
 
-function ThumbnailItem({ thumbnailItemData }) {
-  const thumbnailImgs = thumbnailItemData.images
+import IconArrowRightSVG from '../../public/assets/icons/icon-arrow-right.svg'
 
+function ThumbnailItem({ thumbnailItemData }) {
   return (
-    <div>
-      <h3>{thumbnailItemData.name}</h3>
-      <a href='/'>Shop</a>
-      <img src={thumbnailImgs.desktop} alt='' />
+    <div className={classes.ThumbnailItemData}>
+      <img src={thumbnailItemData.thumbnailImg} className={classes.thumbnailImg} alt='' />
+      <div className={classes.thumbnailContainer}>
+        <p className='title title--xs'>{thumbnailItemData.name}</p>
+        <Link href='/'>
+          <div className={classes.btnContainer}>
+            <a className={classes.btn}>Shop</a>
+            <IconArrowRightSVG />
+          </div>
+        </Link>
+      </div>
     </div>
   )
 }

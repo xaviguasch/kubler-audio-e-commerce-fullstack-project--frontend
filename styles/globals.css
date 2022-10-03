@@ -66,13 +66,12 @@
   --clr-black-dark-el: hsla(0, 0%, 6%, 1);
 
   /* Background  */
-  --clr-grey-clear-bg: hsla(0, 0%, 98%, 1);
 
   /* Others */
 }
 
 body {
-  background: var(--clr-grey-clear-bg);
+  background: var(--clr-white);
 
   color: var(--clr-black);
   font-family: var(--ff-main);
@@ -119,6 +118,11 @@ ul {
 .title--s {
   font-size: var(--fs-28);
   letter-spacing: 1.07px;
+}
+
+.title--xs {
+  font-size: var(--fs-15);
+  letter-spacing: 1.1;
 }
 
 .text {

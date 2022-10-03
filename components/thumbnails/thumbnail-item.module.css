@@ -1,0 +1,57 @@
+.ThumbnailItemData {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  width: 100%;
+
+  position: relative;
+
+  height: 218px;
+
+  overflow: hidden;
+}
+
+.thumbnailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+
+  text-align: center;
+  border-radius: 8px;
+  padding-bottom: 22px;
+  background-color: var(--clr-grey-el);
+
+  height: 165px;
+}
+
+.thumbnailImg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  max-width: 50%;
+  height: auto;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+
+  margin-top: 16px;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-13);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--clr-black-diluted-text);
+}

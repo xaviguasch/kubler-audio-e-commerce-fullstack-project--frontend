@@ -4,8 +4,8 @@ import ThumbnailItem from './thumbnail-item'
 
 function ThumbnailRow({ thumbnailData }) {
   return (
-    <div>
-      <ul>
+    <div className={`${classes.ThumbnailRow} h-padding`}>
+      <ul className={classes.thumbnailList}>
         {thumbnailData.map((data) => (
           <li key={data.name}>
             <ThumbnailItem thumbnailItemData={data} />

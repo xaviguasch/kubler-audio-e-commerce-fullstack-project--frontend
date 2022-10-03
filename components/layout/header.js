@@ -15,7 +15,9 @@ function Header() {
       <h2 className='logo'>KublerAudio</h2>
 
       <Link href='/'>
-        <IconCartSVG />
+        <a>
+          <IconCartSVG />
+        </a>
       </Link>
     </header>
   )

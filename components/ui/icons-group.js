@@ -13,13 +13,19 @@ function IconsGroup() {
     <ul className={classes.IconsGroup}>
       <li>
         <Link href='/'>
-          <FacebookSVG />
+          <a>
+            <FacebookSVG />
+          </a>
         </Link>
         <Link href='/'>
-          <TwitterSVG />
+          <a>
+            <TwitterSVG />
+          </a>
         </Link>
         <Link href='/'>
-          <InstagramSVG className={classes.ig} />
+          <a>
+            <InstagramSVG className={classes.ig} />
+          </a>
         </Link>
       </li>
     </ul>

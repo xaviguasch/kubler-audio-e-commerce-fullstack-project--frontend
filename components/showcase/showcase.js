@@ -1,7 +1,6 @@
 import classes from './showcase.module.css'
 
 function Showcase({ showcaseData }) {
-  console.log(showcaseData)
   return (
     <div>
       <div>
