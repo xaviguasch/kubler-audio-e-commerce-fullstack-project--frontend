@@ -56,6 +56,7 @@
 
   /* Text */
   --clr-black-diluted-text: hsla(0, 0%, 0%, 0.5);
+  --clr-white-semi-diluted-text: hsla(0, 0%, 100%, 0.75);
   --clr-white-diluted-text: hsla(0, 0%, 100%, 0.5);
 
   /* Elements */
@@ -77,7 +78,7 @@ body {
   font-family: var(--ff-main);
   font-size: var(--fs-16);
   font-weight: var(--fw-regular);
-  line-height: 1.875;
+  line-height: 1.5;
   text-align: left;
 }
 
@@ -124,14 +125,16 @@ ul {
   font-size: var(--fs-15);
   font-weight: var(--fw-medium);
   line-height: 1.666;
-  opacity: 0.8;
 }
 
 .text--l {
 }
 
-.text__diluted-black {
-  color: var(--clr-black-diluted-text);
+.tag {
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -142,13 +145,37 @@ ul {
   line-height: 1;
 }
 
-.helper__white {
+.helper-text-diluted-black {
+  color: var(--clr-black-diluted-text);
+}
+.helper-text-white {
   color: var(--clr-white);
+}
+.helper-text-semi-diluted-white {
+  color: var(--clr-white-semi-diluted-text);
+}
+.helper-text-diluted-white {
+  color: var(--clr-white-diluted-text);
 }
 
 /* ======================== */
 /* Links, buttons & inputs  */
 /* ======================== */
+
+.button {
+  background: var(--clr-orange-matte-el);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  font-size: var(--fs-13);
+  font-weight: var(--fw-bold);
+  letter-spacing: 1px;
+  line-height: 1.36;
+  padding: 14px 28px;
+
+  display: inline-block;
+}
 
 /* ================== */
 /* Utility styles */

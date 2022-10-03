@@ -1,0 +1,23 @@
+.Hero {
+  padding-top: 112px;
+  padding-bottom: 112px;
+
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Only to have descendant selectors in CSS Modules */
+.copy :global .title {
+  margin-top: 16px;
+}
