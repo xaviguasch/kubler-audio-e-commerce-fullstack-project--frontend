@@ -2,14 +2,13 @@ import classes from './company-motto.module.css'
 
 const CompanyMotto = ({ companyMottoData }) => {
   return (
-    <div>
-      <div>
-        <h2>{companyMottoData.title}</h2>
-        <p>{companyMottoData.copy}</p>
+    <div className={`${classes.CompanyMotto} h-padding`}>
+      <div className={classes.imageContainer}>
+        <img src={companyMottoData.images.mobile} alt='' />
       </div>
-      <div>
-        {' '}
-        <img src={companyMottoData.images.desktop} alt='' />
+      <div className={classes.copyContainer}>
+        <h2 className='title title--s'>{companyMottoData.title}</h2>
+        <p className='text helper-text-diluted-black'>{companyMottoData.copy}</p>
       </div>
     </div>
   )

@@ -55,7 +55,7 @@
   --clr-white: hsla(0, 0%, 100%, 1);
 
   /* Text */
-  --clr-black-diluted-text: hsla(0, 0%, 0%, 0.5);
+  --clr-black-diluted-text: hsla(0, 0%, 0%, 0.6);
   --clr-white-semi-diluted-text: hsla(0, 0%, 100%, 0.75);
   --clr-white-diluted-text: hsla(0, 0%, 100%, 0.5);
 
@@ -151,9 +151,7 @@ ul {
 .helper-text-diluted-black {
   color: var(--clr-black-diluted-text);
 }
-.helper-text-semi-diluted-black {
-  color: var(--clr-black-semi-diluted-text);
-}
+
 .helper-text-white {
   color: var(--clr-white);
 }

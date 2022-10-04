@@ -1,0 +1,23 @@
+.CompanyMotto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  padding-bottom: 120px;
+
+  text-align: center;
+}
+
+.imageContainer :global img {
+  border-radius: 8px;
+}
+
+.copyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
