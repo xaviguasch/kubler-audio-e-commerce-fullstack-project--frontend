@@ -17,7 +17,7 @@ function Hero({ heroCopy }) {
         </div>
         <p className='text helper-text-semi-diluted-white'>{heroCopy.productCopy}</p>
         <Link href='/'>
-          <a className='button'> {heroCopy.buttonText}</a>
+          <a className='button button--orange-matte'> {heroCopy.buttonText}</a>
         </Link>
       </div>
     </div>

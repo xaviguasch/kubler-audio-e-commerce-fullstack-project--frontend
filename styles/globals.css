@@ -169,8 +169,6 @@ ul {
 /* ======================== */
 
 .button {
-  background: var(--clr-orange-matte-el);
-  color: var(--clr-white);
   text-transform: uppercase;
   text-decoration: none;
 
@@ -178,14 +176,27 @@ ul {
   font-weight: var(--fw-bold);
   letter-spacing: 1px;
   line-height: 1.36;
-  padding: 14px 28px;
+  padding: 13px 27px;
 
   display: inline-block;
+}
+
+.button--orange-matte {
+  background: var(--clr-orange-matte-el);
+  color: var(--clr-white);
+  border: 1px solid var(--clr-orange-matte-el);
 }
 
 .button--black {
   color: var(--clr-white);
   background: var(--clr-black);
+  border: 1px solid var(--clr-black);
+}
+
+.button--transparent {
+  color: var(--clr-black);
+  background: transparent;
+  border: 1px solid var(--clr-black);
 }
 
 /* ================== */
