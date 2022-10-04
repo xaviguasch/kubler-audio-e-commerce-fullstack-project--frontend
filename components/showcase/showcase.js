@@ -37,10 +37,10 @@ function Showcase({ showcaseData }) {
       </div>
 
       <div className={`${classes.showcaseItem} ${classes.showcaseItemC}`}>
-        <div className='showcaseImgContainer'>
+        <div className={classes.showcaseImgContainer}>
           <img src={showcaseData.yx1Earphones.images.mobile} alt='' />
         </div>
-        <div className='showcaseCopyContainer'>
+        <div className={classes.showcaseCopyContainer}>
           <h2 className='title'>{showcaseData.yx1Earphones.name}</h2>
           <a className='button button--transparent' href='/'>
             See product
