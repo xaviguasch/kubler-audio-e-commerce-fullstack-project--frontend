@@ -72,7 +72,6 @@
 
 body {
   background: var(--clr-white);
-
   color: var(--clr-black);
   font-family: var(--ff-main);
   font-size: var(--fs-16);
@@ -122,7 +121,7 @@ ul {
 
 .title--xs {
   font-size: var(--fs-15);
-  letter-spacing: 1.1;
+  letter-spacing: 1.1px;
 }
 
 .text {
@@ -152,6 +151,9 @@ ul {
 .helper-text-diluted-black {
   color: var(--clr-black-diluted-text);
 }
+.helper-text-semi-diluted-black {
+  color: var(--clr-black-semi-diluted-text);
+}
 .helper-text-white {
   color: var(--clr-white);
 }
@@ -179,6 +181,11 @@ ul {
   padding: 14px 28px;
 
   display: inline-block;
+}
+
+.button--black {
+  color: var(--clr-white);
+  background: var(--clr-black);
 }
 
 /* ================== */

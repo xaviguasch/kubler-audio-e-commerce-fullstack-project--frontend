@@ -24,6 +24,7 @@ function IconsGroup() {
         </Link>
         <Link href='/'>
           <a>
+            {/* the ig class is just a test, DELETE LATER */}
             <InstagramSVG className={classes.ig} />
           </a>
         </Link>

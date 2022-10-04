@@ -1,0 +1,48 @@
+.Showcase {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+
+  text-align: center;
+}
+
+.showcaseItem {
+  border-radius: 8px;
+}
+
+.showcaseItemA {
+  background: url('/assets/icons/pattern-circles.svg') no-repeat 50% -125px;
+  background-color: var(--clr-orange-matte-el);
+  background-size: cover;
+
+  padding: 55px 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.imgA {
+  width: 62%;
+  height: auto;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.widthHelper {
+  max-width: 200px;
+}

@@ -54,4 +54,6 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--clr-black-diluted-text);
+
+  cursor: pointer;
 }
