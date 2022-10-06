@@ -1,3 +1,25 @@
-.hidden {
+.Navbar {
+}
+
+.nav_header {
+}
+
+.nav_header .linkList {
   display: none;
+}
+
+/* Styles applied when the Navbar is positioned in the Footer */
+.nav_footer {
+}
+
+.nav_footer .hamburgerContainer {
+  display: none;
+}
+
+.nav_footer .linkList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }

@@ -130,9 +130,6 @@ ul {
   line-height: 1.666;
 }
 
-.text--l {
-}
-
 .tag {
   font-size: 14px;
   line-height: 1.35;
@@ -146,6 +143,10 @@ ul {
   color: var(--clr-white);
   font-size: var(--fs-20);
   line-height: 1;
+}
+
+.logo--l {
+  font-size: var(--fs-24);
 }
 
 .helper-text-diluted-black {
@@ -162,9 +163,23 @@ ul {
   color: var(--clr-white-diluted-text);
 }
 
+.helper-text-bold {
+  font-weight: var(--fw-bold);
+}
+
 /* ======================== */
 /* Links, buttons & inputs  */
 /* ======================== */
+
+.nav-link {
+  font-size: var(--fs-13);
+  font-weight: var(--fw-bold);
+  line-height: 1.92;
+  color: var(--clr-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 .button {
   text-transform: uppercase;

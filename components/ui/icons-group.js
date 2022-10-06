@@ -17,15 +17,20 @@ function IconsGroup() {
             <FacebookSVG />
           </a>
         </Link>
+      </li>
+
+      <li>
         <Link href='/'>
           <a>
             <TwitterSVG />
           </a>
         </Link>
+      </li>
+
+      <li>
         <Link href='/'>
           <a>
-            {/* the ig class is just a test, DELETE LATER */}
-            <InstagramSVG className={classes.ig} />
+            <InstagramSVG />
           </a>
         </Link>
       </li>

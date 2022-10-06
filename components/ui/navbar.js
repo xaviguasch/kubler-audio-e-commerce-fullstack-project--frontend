@@ -8,29 +8,30 @@ import HamburgerSVG from '../../public/assets/icons/icon-hamburger.svg'
 
 function Navbar({ position }) {
   return (
-    <nav className={classes.Navbar}>
-      <div className='hamburger'>
+    <nav className={`${classes.Navbar} ${classes[position]} `}>
+      <div className={classes.hamburgerContainer}>
         <HamburgerSVG />
       </div>
-      <ul className={classes.hidden}>
+
+      <ul className={classes.linkList}>
         <li>
           <Link href='/home'>
-            <a>Home</a>
+            <a className='nav-link'>Home</a>
           </Link>
         </li>
         <li>
           <Link href='/headphones'>
-            <a>Headphones</a>
+            <a className='nav-link'>Headphones</a>
           </Link>
         </li>
         <li>
           <Link href='/speakers'>
-            <a>Speakers</a>
+            <a className='nav-link'>Speakers</a>
           </Link>
         </li>
         <li>
           <Link href='/earphones'>
-            <a>Headphones</a>
+            <a className='nav-link'>Headphones</a>
           </Link>
         </li>
       </ul>
