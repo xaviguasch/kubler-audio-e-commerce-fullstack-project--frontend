@@ -11,8 +11,6 @@ const CategoryProjectPage = ({ mappingData, copyData }) => {
 
   return (
     <div>
-      <h1>{router.query.family}</h1>
-
       <ProductFamily
         thumbnailData={mappingData.thumbnailRow}
         productData={mappingData.productPreviews[family]}
@@ -42,6 +40,7 @@ export async function getStaticPaths() {
       { params: { family: 'earphones' } },
       { params: { family: 'speakers' } },
     ],
+    // The fallback needs to be REVISITED
     fallback: 'blocking',
   }
 }

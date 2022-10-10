@@ -1,0 +1,8 @@
+.SectionHeader {
+  background-color: var(--clr-black);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  text-align: center;
+}

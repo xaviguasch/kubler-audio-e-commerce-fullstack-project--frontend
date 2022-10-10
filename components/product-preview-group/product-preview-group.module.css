@@ -1,0 +1,13 @@
+.ProductPreviewGroup {
+  padding-top: 64px;
+
+  text-align: center;
+}
+
+.PPGList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}

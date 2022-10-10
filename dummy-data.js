@@ -610,15 +610,15 @@ export const COPY_DATA = {
 export const MAPPING_DATA = {
   thumbnailRow: [
     {
-      name: 'Headphones',
+      name: 'headphones',
       thumbnailImg: '/assets/shared/desktop/image-category-thumbnail-headphones.png',
     },
     {
-      name: 'Speakers',
+      name: 'speakers',
       thumbnailImg: '/assets/shared/desktop/image-category-thumbnail-speakers.png',
     },
     {
-      name: 'Earphones',
+      name: 'earphones',
       thumbnailImg: '/assets/shared/desktop/image-category-thumbnail-earphones.png',
     },
   ],

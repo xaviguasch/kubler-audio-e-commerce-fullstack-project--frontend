@@ -6,7 +6,7 @@ function ProductPreview({ ppData }) {
   console.log(ppData)
 
   return (
-    <div>
+    <li>
       <p>product preview</p>
       <div>
         {tag && <span>{tag}</span>}
@@ -17,7 +17,7 @@ function ProductPreview({ ppData }) {
       <div>
         <img src={images.desktop} alt='' />
       </div>
-    </div>
+    </li>
   )
 }
 
