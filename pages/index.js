@@ -1,6 +1,8 @@
 import { COPY_DATA } from '../dummy-data'
 import { MAPPING_DATA } from '../dummy-data'
 
+import classes from './index.module.css'
+
 import Hero from '../components/hero/hero'
 import ThumbnailRow from '../components/thumbnails/thumbnail-row'
 import Showcase from '../components/showcase/showcase'
@@ -11,11 +13,13 @@ function HomePage({ copyData, mappingData }) {
   return (
     <div>
       <Hero heroCopy={copyData.hero} />
-      <ThumbnailRow thumbnailData={mappingData.thumbnailRow} />
+      <div className={classes.container}>
+        <ThumbnailRow thumbnailData={mappingData.thumbnailRow} />
 
-      <Showcase showcaseData={copyData.showcase} />
+        <Showcase showcaseData={copyData.showcase} />
 
-      <CompanyMotto companyMottoData={copyData.companyMotto} />
+        <CompanyMotto companyMottoData={copyData.companyMotto} />
+      </div>
     </div>
   )
 }

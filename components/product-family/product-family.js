@@ -10,9 +10,11 @@ function ProductFamily({ thumbnailData, familyName, productData, companyMottoDat
     return (
       <div className={classes.ProductFamily}>
         <SectionHeader familyName={familyName} />
-        <ProductPreviewGroup previewData={productData} />
-        <ThumbnailRow thumbnailData={thumbnailData} />
-        <CompanyMotto companyMottoData={companyMottoData} />
+        <div className={classes.PFContainer}>
+          <ProductPreviewGroup previewData={productData} />
+          <ThumbnailRow thumbnailData={thumbnailData} />
+          <CompanyMotto companyMottoData={companyMottoData} />
+        </div>
       </div>
     )
   } else {

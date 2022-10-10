@@ -1,9 +1,10 @@
-.ProductFamily {
+.HomePage {
 }
 
-.PFContainer {
+.container {
+  padding-top: 40px;
+
   display: flex;
   flex-direction: column;
-
   gap: 120px;
 }
