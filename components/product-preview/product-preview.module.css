@@ -1,0 +1,16 @@
+.ProductPreview {
+  composes: flex--col--center from global;
+
+  gap: 32px;
+}
+
+.copy {
+  composes: flex--col--center from global;
+
+  gap: 24px;
+}
+
+.PPTag {
+  composes: tag from global;
+  color: var(--clr-orange-matte-el);
+}

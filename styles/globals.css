@@ -219,3 +219,17 @@ ul {
   padding-left: 24px;
   padding-right: 24px;
 }
+
+.flex--row--center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex--col--center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
