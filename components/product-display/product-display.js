@@ -4,6 +4,9 @@ import classes from './product-display.module.css'
 
 import Link from 'next/link'
 
+import PDMain from './pd-main'
+import PDFeatures from './pd-features'
+
 function ProductDisplay({ productInfo }) {
   const {
     name,
@@ -20,46 +23,9 @@ function ProductDisplay({ productInfo }) {
   } = productInfo
   return (
     <div>
-      <div>
-        <div>
-          <img src={image.mobile} alt='' />
-        </div>
-        <div>
-          {isItNew ? <span>New Product</span> : null}
-          <h2>{name}</h2>
-          <p>{description}</p>
-          <p>{price}</p>
+      <PDMain productInfo={productInfo} />
 
-          <div>
-            <form action=''>
-              <input type='number' name='' id='' />
-              <button>Add to Cart</button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <h3>Features</h3>
-          <p>{features}</p>
-        </div>
-        <div>
-          <h3>In The Box</h3>
-          <ul>
-            {includes.map((extras) => {
-              return (
-                <div key={extras.item}>
-                  <li>
-                    <span>{extras.quantity}x</span>
-                    <span>{extras.item}</span>
-                  </li>
-                </div>
-              )
-            })}
-          </ul>
-        </div>
-      </div>
+      <PDFeatures productInfo={productInfo} />
 
       <div>
         <p>Gallery</p>
