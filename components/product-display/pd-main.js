@@ -3,22 +3,10 @@ import React from 'react'
 import classes from './pd-main.module.css'
 
 function PDMain({ productInfo }) {
-  const {
-    name,
-    image,
-    category,
-    categoryImage,
-    isItNew,
-    price,
-    description,
-    features,
-    includes,
-    gallery,
-    others,
-  } = productInfo
+  const { name, image, isItNew, price, description } = productInfo
 
   return (
-    <div>
+    <div className={classes.PDMain}>
       <div>
         <img src={image.mobile} alt='' />
       </div>

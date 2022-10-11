@@ -1,8 +1,12 @@
 import { useRouter } from 'next/router'
 
+import Link from 'next/link'
+
 import { DUMMY_PRODUCTS } from '../../../dummy-data'
 import { MAPPING_DATA } from '../../../dummy-data'
 import { COPY_DATA } from '../../../dummy-data'
+
+import classes from './index.module.css'
 
 import ThumbnailRow from '../../../components/thumbnails/thumbnail-row'
 import CompanyMotto from '../../../components/company-motto/company-motto'
@@ -13,11 +17,21 @@ const ProductDetailPage = ({ productInfo, mappingData, copyData }) => {
   const router = useRouter()
 
   return (
-    <div>
-      <ProductDisplay productInfo={productInfo} />
-      <ThumbnailRow thumbnailData={mappingData.thumbnailRow} />
+    <div className={`${classes.ProductDetailPage} h-padding`}>
+      <button
+        className='button button--empty'
+        type='button'
+        onClick={() => router.back()}
+      >
+        Go Back{' '}
+      </button>
 
-      <CompanyMotto companyMottoData={copyData.companyMotto} />
+      <div className={classes.container}>
+        <ProductDisplay productInfo={productInfo} />
+        <ThumbnailRow thumbnailData={mappingData.thumbnailRow} />
+
+        <CompanyMotto companyMottoData={copyData.companyMotto} />
+      </div>
     </div>
   )
 }

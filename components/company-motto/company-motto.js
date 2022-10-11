@@ -2,7 +2,7 @@ import classes from './company-motto.module.css'
 
 const CompanyMotto = ({ companyMottoData }) => {
   return (
-    <div className={`${classes.CompanyMotto} h-padding`}>
+    <div className={classes.CompanyMotto}>
       <div className={classes.imageContainer}>
         <img src={companyMottoData.images.mobile} alt='' />
       </div>

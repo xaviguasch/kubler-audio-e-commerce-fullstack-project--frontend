@@ -1,0 +1,15 @@
+.ProductDetailPage {
+  padding-top: 16px;
+  padding-bottom: 120px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+
+  gap: 120px;
+
+  margin-top: 24px;
+}

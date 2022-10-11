@@ -192,6 +192,8 @@ ul {
   padding: 13px 27px;
 
   display: inline-block;
+
+  cursor: pointer;
 }
 
 .button--orange-matte {
@@ -210,6 +212,18 @@ ul {
   color: var(--clr-black);
   background: transparent;
   border: 1px solid var(--clr-black);
+}
+
+.button--empty {
+  text-transform: none;
+  background-color: transparent;
+  border: none;
+
+  font-size: var(--fs-15);
+  font-weight: var(--fw-medium);
+  color: var(--clr-black-diluted-text);
+  width: fit-content;
+  padding: 6px 0;
 }
 
 /* ================== */
