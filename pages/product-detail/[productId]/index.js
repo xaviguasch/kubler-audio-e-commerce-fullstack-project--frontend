@@ -26,10 +26,6 @@ const ProductDetailPage = ({ productInfo, mappingData, copyData }) => {
     others,
   } = productInfo
 
-  // console.log('===================')
-  // console.log(productInfo)
-  // console.log('===================')
-
   return (
     <div>
       <div>
