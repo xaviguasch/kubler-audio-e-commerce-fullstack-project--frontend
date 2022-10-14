@@ -10,16 +10,19 @@ function PDMain({ productInfo }) {
       <div>
         <img src={image.mobile} alt='' />
       </div>
-      <div>
-        {isItNew ? <span>New Product</span> : null}
-        <h2>{name}</h2>
-        <p>{description}</p>
-        <p>{price}</p>
+
+      <div className={classes.containerInfo}>
+        <div className={classes.copy}>
+          {isItNew ? <span className={classes.PDMTag}>New Product</span> : null}
+          <h2 className='title'>{name}</h2>
+          <p className='text'>{description}</p>
+          <p className='price'>€ {price.toLocaleString('en', { useGrouping: true })}</p>
+        </div>
 
         <div>
           <form action=''>
             <input type='number' name='' id='' />
-            <button>Add to Cart</button>
+            <button className='button button--orange-matte'>Add to Cart</button>
           </form>
         </div>
       </div>

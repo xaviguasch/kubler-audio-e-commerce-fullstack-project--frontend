@@ -149,6 +149,13 @@ ul {
   font-size: var(--fs-24);
 }
 
+.price {
+  font-size: var(--fs-18);
+  font-weight: var(--fw-bold);
+  line-height: 1.36;
+  letter-spacing: 1.29px;
+}
+
 .helper-text-diluted-black {
   color: var(--clr-black-diluted-text);
 }
@@ -179,6 +186,8 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  cursor: pointer;
 }
 
 .button {
@@ -246,4 +255,11 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.flex--col--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }

@@ -6,3 +6,20 @@
 
   gap: 32px;
 }
+
+.containerInfo {
+  composes: flex--col--left from global;
+
+  gap: 32px;
+}
+
+.copy {
+  composes: flex--col--left from global;
+
+  gap: 24px;
+}
+
+.PDMTag {
+  composes: tag from global;
+  color: var(--clr-orange-matte-el);
+}
