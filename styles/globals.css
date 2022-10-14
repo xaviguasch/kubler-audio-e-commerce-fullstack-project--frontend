@@ -119,6 +119,11 @@ ul {
   letter-spacing: 2px;
 }
 
+.title--s__alt {
+  font-size: var(--fs-24);
+  letter-spacing: 0.86px;
+}
+
 .title--xs {
   font-size: var(--fs-15);
   letter-spacing: 1.1px;
@@ -154,6 +159,12 @@ ul {
   font-weight: var(--fw-bold);
   line-height: 1.36;
   letter-spacing: 1.29px;
+}
+
+.box-units {
+  font-size: var(--fs-15);
+  font-weight: var(--fw-bold);
+  color: var(--clr-orange-matte-el);
 }
 
 .helper-text-diluted-black {
@@ -247,6 +258,12 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+.flex--row--left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 

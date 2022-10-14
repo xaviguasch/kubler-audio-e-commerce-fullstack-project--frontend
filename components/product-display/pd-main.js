@@ -15,7 +15,7 @@ function PDMain({ productInfo }) {
         <div className={classes.copy}>
           {isItNew ? <span className={classes.PDMTag}>New Product</span> : null}
           <h2 className='title'>{name}</h2>
-          <p className='text'>{description}</p>
+          <p className='text helper-text-diluted-black'>{description}</p>
           <p className='price'>€ {price.toLocaleString('en', { useGrouping: true })}</p>
         </div>
 

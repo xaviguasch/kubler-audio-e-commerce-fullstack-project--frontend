@@ -18,22 +18,25 @@ function PDFeatures({ productInfo }) {
   } = productInfo
 
   return (
-    <div>
-      <div>
-        <h3>Features</h3>
-        <p>{features}</p>
+    <div className={classes.PDFeatures}>
+      <div className={classes.container}>
+        <h3 className='title title--s__alt'>Features</h3>
+        <div className={classes.featuresInfo}>
+          {features.split('\n').map((i) => (
+            <p className='text helper-text-diluted-black'>{i}</p>
+          ))}
+        </div>
       </div>
-      <div>
-        <h3>In The Box</h3>
+
+      <div className={classes.container}>
+        <h3 className='title title--s__alt'>In The Box</h3>
         <ul>
           {includes.map((extras) => {
             return (
-              <div key={extras.item}>
-                <li>
-                  <span>{extras.quantity}x</span>
-                  <span>{extras.item}</span>
-                </li>
-              </div>
+              <li key={extras.item} className={classes.boxPair}>
+                <span className='box-units'>{extras.quantity}x</span>
+                <span className='text helper-text-diluted-black'>{extras.item}</span>
+              </li>
             )
           })}
         </ul>

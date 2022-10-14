@@ -1,0 +1,20 @@
+.PDFeatures {
+  composes: flex--col--left from global;
+
+  gap: 88px;
+}
+
+.container {
+  composes: flex--col--left from global;
+  gap: 24px;
+}
+
+.featuresInfo {
+  composes: flex--col--left from global;
+  gap: 16px;
+}
+
+.boxPair {
+  composes: flex--row--left from global;
+  gap: 24px;
+}
