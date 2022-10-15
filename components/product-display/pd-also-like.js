@@ -20,16 +20,20 @@ function PDAlsoLike({ productInfo }) {
   } = productInfo
 
   return (
-    <div>
-      <h3>You May Also Like</h3>
+    <div className={classes.PDAlsoLike}>
+      <h3 className='title title--s__alt'>You May Also Like</h3>
 
-      <ul>
+      <ul className={classes.list}>
         {others.map((other) => {
           return (
-            <li key={other.name}>
+            <li key={other.name} className={classes.item}>
               <img src={other.image.mobile} alt='' />
-              <Link href={`/product-detail/${other.slug}`}>
-                <button>See Product</button>
+              <h2>{other.name}</h2>
+              <Link
+                href={`/product-detail/${other.slug}`}
+                className='button button--orange-matte'
+              >
+                <button className='button button--orange-matte'>See Product</button>
               </Link>
             </li>
           )

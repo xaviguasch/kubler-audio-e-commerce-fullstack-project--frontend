@@ -1,0 +1,17 @@
+.PDAlsoLike {
+  composes: flex--col--center from global;
+
+  gap: 40px;
+}
+
+.list {
+  composes: flex--col--center from global;
+
+  gap: 56px;
+}
+
+.item {
+  composes: flex--col--center from global;
+
+  gap: 32px;
+}
