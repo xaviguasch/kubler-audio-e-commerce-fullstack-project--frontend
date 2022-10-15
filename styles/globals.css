@@ -64,6 +64,7 @@
   --clr-orange-matte-el: hsla(22, 65%, 57%, 1);
   --clr-orange-diluted-el: hsla(22, 93%, 75%, 1);
   --clr-black-dark-el: hsla(0, 0%, 6%, 1);
+  --clr-black-overlay-el: hsla(0, 0%, 0%, 0.4);
 
   /* Background  */
 
@@ -246,6 +247,10 @@ ul {
   padding: 6px 0;
 }
 
+.icon-btn {
+  cursor: pointer;
+}
+
 /* ================== */
 /* Utility styles */
 /* ================== */
@@ -279,4 +284,15 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.overlay {
+  background-color: var(--clr-black-overlay-el);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  /* transform: translate(-50%, -50%); */
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }

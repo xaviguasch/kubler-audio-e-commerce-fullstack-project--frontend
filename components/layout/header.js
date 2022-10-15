@@ -7,18 +7,14 @@ import classes from './header.module.css'
 
 import IconCartSVG from '../../public/assets/icons/icon-cart.svg'
 
-function Header() {
+function Header({ cartModalHandler }) {
   return (
     <header className={`${classes.Header} h-padding`}>
       <Navbar position='nav_header' />
 
       <h2 className='logo'>KublerAudio</h2>
 
-      <Link href='/'>
-        <a>
-          <IconCartSVG />
-        </a>
-      </Link>
+      <IconCartSVG className='icon-btn' onClick={cartModalHandler} />
     </header>
   )
 }
