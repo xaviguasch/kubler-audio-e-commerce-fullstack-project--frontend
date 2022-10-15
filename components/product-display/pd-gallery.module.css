@@ -1,0 +1,10 @@
+.PDGallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 20px;
+}
+
+.gridImg {
+  border-radius: 8px;
+}

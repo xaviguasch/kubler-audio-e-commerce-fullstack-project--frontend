@@ -6,15 +6,10 @@ function PDGallery({ productInfo }) {
   const { gallery } = productInfo
 
   return (
-    <div>
-      <p>Gallery</p>
-      <div>
-        <img src={gallery.first.mobile} alt='' />
-        <img src={gallery.second.mobile} alt='' />
-      </div>
-      <div>
-        <img src={gallery.third.mobile} alt='' />
-      </div>
+    <div className={classes.PDGallery}>
+      <img className={classes.gridImg} src={gallery.first.mobile} alt='' />
+      <img className={classes.gridImg} src={gallery.second.mobile} alt='' />
+      <img className={classes.gridImg} src={gallery.third.mobile} alt='' />
     </div>
   )
 }
