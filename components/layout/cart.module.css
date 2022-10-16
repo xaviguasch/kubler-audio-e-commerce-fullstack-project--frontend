@@ -1,3 +1,46 @@
 .Cart {
   composes: overlay from global;
 }
+
+.container {
+  composes: modal-card from global;
+  composes: flex--col--stretch from global;
+
+  gap: 32px;
+}
+
+.upper {
+  composes: flex--row--space-between from global;
+}
+
+.cartList {
+  composes: flex--col--stretch from global;
+
+  gap: 24px;
+}
+
+.btn {
+  composes: text from global;
+  composes: helper-text-diluted-black from global;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+
+  font-family: var(--ff-main);
+}
+
+.lower {
+  composes: flex--col--stretch from global;
+
+  gap: 38px;
+}
+
+.total {
+  composes: flex--row--space-between from global;
+}
+
+.totalTag {
+  text-transform: uppercase;
+}

@@ -25,7 +25,13 @@ function Layout(props) {
   return (
     <Fragment>
       <Header cartModalHandler={cartModalHandler} />
-      {isOpen && <Cart isOpen={isOpen} cartModalHandler={cartModalHandler} />}
+      {isOpen && (
+        <Cart
+          isOpen={isOpen}
+          cartModalHandler={cartModalHandler}
+          dummyData={props.dummyData}
+        />
+      )}
       <main>{props.children}</main>
       <Footer copyData={props.copyData} />
     </Fragment>

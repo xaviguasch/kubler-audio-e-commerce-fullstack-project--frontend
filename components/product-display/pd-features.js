@@ -17,13 +17,18 @@ function PDFeatures({ productInfo }) {
     others,
   } = productInfo
 
+  // using the text as key in the first map is a hack
+  // needs to be FIXED!!!!
+
   return (
     <div className={classes.PDFeatures}>
       <div className={classes.container}>
         <h3 className='title title--s__alt'>Features</h3>
         <div className={classes.featuresInfo}>
           {features.split('\n').map((i) => (
-            <p className='text helper-text-diluted-black'>{i}</p>
+            <p key={i} className='text helper-text-diluted-black'>
+              {i}
+            </p>
           ))}
         </div>
       </div>

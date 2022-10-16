@@ -56,6 +56,7 @@
 
   /* Text */
   --clr-black-diluted-text: hsla(0, 0%, 0%, 0.6);
+  --clr-black-more-diluted-text: hsla(0, 0%, 0%, 0.5);
   --clr-white-semi-diluted-text: hsla(0, 0%, 100%, 0.75);
   --clr-white-diluted-text: hsla(0, 0%, 100%, 0.5);
 
@@ -118,6 +119,11 @@ ul {
 .title--s {
   font-size: var(--fs-28);
   letter-spacing: 2px;
+}
+
+.title--xs {
+  font-size: var(--fs-18);
+  letter-spacing: 1.29px;
 }
 
 .title--s__alt {
@@ -265,6 +271,13 @@ ul {
   justify-content: center;
   align-items: center;
 }
+.flex--row--space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .flex--row--left {
   display: flex;
   flex-direction: row;
@@ -279,6 +292,13 @@ ul {
   align-items: center;
 }
 
+.flex--col--stretch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
 .flex--col--left {
   display: flex;
   flex-direction: column;
@@ -291,8 +311,22 @@ ul {
   width: 100vw;
   height: 100vh;
   z-index: 0;
+
   /* transform: translate(-50%, -50%); */
   position: absolute;
   top: 0%;
   left: 0%;
+}
+
+.modal-card {
+  position: absolute;
+  top: 104px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  background-color: var(--clr-white);
+  width: calc(100% - 48px);
+  border-radius: 8px;
+
+  padding: 32px 28px;
 }

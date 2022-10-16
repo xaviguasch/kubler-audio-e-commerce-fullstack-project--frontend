@@ -1,0 +1,29 @@
+.CartItem {
+  composes: flex--row--space-between from global;
+}
+
+.left {
+  composes: flex--row--left from global;
+
+  gap: 16px;
+}
+
+.imageContainer {
+  max-width: 64px;
+}
+
+.imageContainer img {
+  border-radius: 6px;
+}
+
+.itemInfo {
+  composes: flex--col--left from global;
+}
+
+.price {
+  composes: price from global;
+
+  font-size: var(--fs-14);
+  letter-spacing: 0px;
+  color: var(--clr-black-more-diluted-text);
+}
