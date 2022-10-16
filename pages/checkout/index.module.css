@@ -1,0 +1,17 @@
+.Checkout {
+  background: var(--clr-grey-el);
+
+  padding-top: 16px;
+}
+
+.checkoutCard {
+  background: var(--clr-white);
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  padding-top: 24px;
+  padding-bottom: 32px;
+
+  margin-top: 24px;
+}
