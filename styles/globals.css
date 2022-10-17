@@ -66,6 +66,7 @@
   --clr-orange-diluted-el: hsla(22, 93%, 75%, 1);
   --clr-black-dark-el: hsla(0, 0%, 6%, 1);
   --clr-black-overlay-el: hsla(0, 0%, 0%, 0.4);
+  --clr-greyed-input-el: hsl(0, 0%, 81%);
 
   /* Background  */
 
@@ -136,6 +137,12 @@ ul {
   letter-spacing: 1.1px;
 }
 
+.title--form-section {
+  font-size: var(--fs-13);
+  letter-spacing: 0.93px;
+  color: var(--clr-orange-matte-el);
+}
+
 .text {
   font-size: var(--fs-15);
   font-weight: var(--fw-medium);
@@ -147,6 +154,12 @@ ul {
   line-height: 1.35;
   letter-spacing: 10px;
   text-transform: uppercase;
+}
+
+.label {
+  font-size: var(--fs-12);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.2px;
 }
 
 .logo {
@@ -255,6 +268,21 @@ ul {
 
 .icon-btn {
   cursor: pointer;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid var(--clr-greyed-input-el);
+  padding: 16px 24px;
+
+  font-family: var(--ff-main);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-14);
+  letter-spacing: -0.25px;
+}
+
+input::placeholder {
+  color: var(--clr-black-more-diluted-text);
 }
 
 /* ================== */
