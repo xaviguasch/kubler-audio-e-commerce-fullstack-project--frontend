@@ -2,7 +2,7 @@ import React from 'react'
 
 import classes from './cart-item.module.css'
 
-function CartItem({ data }) {
+function CartItem({ data, location }) {
   return (
     <div className={classes.CartItem}>
       <div className={classes.left}>
@@ -17,7 +17,7 @@ function CartItem({ data }) {
         </div>
       </div>
       <div className={classes.right}>
-        <button>finish</button>
+        {location === 'checkout' ? <span>x2</span> : <button>(pending)</button>}
       </div>
     </div>
   )

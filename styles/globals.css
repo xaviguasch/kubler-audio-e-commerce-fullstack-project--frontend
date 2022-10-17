@@ -132,11 +132,6 @@ ul {
   letter-spacing: 0.86px;
 }
 
-.title--xs {
-  font-size: var(--fs-15);
-  letter-spacing: 1.1px;
-}
-
 .title--form-section {
   font-size: var(--fs-13);
   letter-spacing: 0.93px;

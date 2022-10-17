@@ -9,7 +9,7 @@ function Cart({ isOpen, cartModalHandler, dummyData }) {
 
   console.log(dummyData)
   // dummy price
-  const price = 5396
+  const price = 10999
 
   // HARDCODED DATA, PROVISIONAL!!!!
 

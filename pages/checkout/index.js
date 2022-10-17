@@ -5,8 +5,11 @@ import classes from './index.module.css'
 import Link from 'next/link'
 
 import CheckoutForm from '../../components/checkout-parts/checkout-form'
+import CheckoutSummary from '../../components/checkout-parts/checkout-summary'
 
-const Checkout = ({}) => {
+import { DUMMY_PRODUCTS } from '../../dummy-data'
+
+const Checkout = ({ dummyProducts }) => {
   const router = useRouter()
 
   return (
@@ -16,10 +19,19 @@ const Checkout = ({}) => {
       <div className={classes.checkoutLayout}>
         <CheckoutForm />
 
-        <h2>Summary placeholder</h2>
+        <CheckoutSummary dummyProducts={dummyProducts} />
       </div>
     </div>
   )
+}
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      dummyProducts: DUMMY_PRODUCTS,
+    },
+    revalidate: 30,
+  }
 }
 
 export default Checkout

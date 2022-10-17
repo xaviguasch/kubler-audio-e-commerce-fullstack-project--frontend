@@ -1,0 +1,36 @@
+.CheckoutSummary {
+  background: var(--clr-white);
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  padding-top: 24px;
+  padding-bottom: 32px;
+
+  composes: flex--col--stretch from global;
+
+  gap: 32px;
+
+  border-radius: 8px;
+}
+
+.itemsList,
+.totalGroup {
+  composes: flex--col--stretch from global;
+
+  gap: 24px;
+}
+
+.totalSubGroup {
+  composes: flex--col--stretch from global;
+
+  gap: 8px;
+}
+
+.total {
+  composes: flex--row--space-between from global;
+}
+
+.totalTag {
+  text-transform: uppercase;
+}
