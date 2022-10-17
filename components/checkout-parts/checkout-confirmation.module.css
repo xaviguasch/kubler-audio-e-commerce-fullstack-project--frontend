@@ -1,0 +1,17 @@
+.CheckoutConfirmation {
+  background: var(--clr-white);
+
+  padding-left: 24px;
+  padding-right: 24px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  margin-top: 24px;
+
+  composes: flex--col--stretch from global;
+
+  gap: 24px;
+
+  border-radius: 8px;
+}

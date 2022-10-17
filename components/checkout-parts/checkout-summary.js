@@ -4,7 +4,7 @@ import classes from './checkout-summary.module.css'
 
 import CartItem from '../layout/cart-item'
 
-function CheckoutSummary({ dummyProducts }) {
+function CheckoutSummary({ dummyProducts, isPaidHandler }) {
   const price = 5396
   const shipping = 50
   const vat = 1079
@@ -46,7 +46,9 @@ function CheckoutSummary({ dummyProducts }) {
         </div>
       </div>
 
-      <button className='button button--orange-matte'>Continue & pay</button>
+      <button className='button button--orange-matte' onClick={isPaidHandler}>
+        Continue & pay
+      </button>
     </div>
   )
 }
