@@ -7,7 +7,7 @@ const CompanyMotto = ({ companyMottoData }) => {
         <img src={companyMottoData.images.mobile} alt='' />
       </div>
       <div className={classes.copyContainer}>
-        <h2 className='title title--s'>{companyMottoData.title}</h2>
+        <h2 className='title'>{companyMottoData.title}</h2>
         <p className='text helper-text-diluted-black'>{companyMottoData.copy}</p>
       </div>
     </div>

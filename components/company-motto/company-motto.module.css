@@ -1,4 +1,6 @@
 .CompanyMotto {
+  composes: h-padding from global;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

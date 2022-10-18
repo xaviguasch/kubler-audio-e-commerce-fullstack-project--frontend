@@ -1,4 +1,5 @@
 .ThumbnailRow {
+  composes: h-padding from global;
 }
 
 .thumbnailList {

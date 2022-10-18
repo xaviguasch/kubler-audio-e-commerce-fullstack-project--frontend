@@ -551,6 +551,7 @@ export const COPY_DATA = {
       tablet: '/assets/home/tablet/image-header.jpg',
       mobile: '/assets/home/mobile/image-header.jpg',
     },
+    url: '/product-detail/xx99-mark-two-headphones',
   },
   showcase: {
     speakerZx9: {
