@@ -15,3 +15,69 @@
 
   border-radius: 8px;
 }
+
+.copy {
+  composes: flex--col--left from global;
+
+  gap: 16px;
+}
+
+.title {
+  composes: title--s from global;
+  composes: title from global;
+
+  padding-right: 16px;
+}
+
+.orderInfo {
+  composes: flex--col--stretch from global;
+}
+
+.upper {
+  background-color: var(--clr-grey-el);
+
+  padding: 24px 24px 16px;
+
+  border-radius: 8px 8px 0 0;
+
+  composes: flex--col--stretch from global;
+
+  gap: 6px;
+}
+
+.pair {
+  composes: flex--row--space-between from global;
+}
+
+.lower {
+  composes: flex--col--left from global;
+
+  gap: 6px;
+
+  background-color: var(--clr-black);
+  padding-left: 24px;
+  padding-right: 24px;
+
+  padding-top: 14px;
+  padding-bottom: 16px;
+
+  border-radius: 0 0 8px 8px;
+}
+
+.grandTotal {
+  composes: text from global;
+  color: var(--clr-white-diluted-text);
+
+  text-transform: uppercase;
+}
+
+.price {
+  composes: price from global;
+  color: var(--clr-white);
+}
+
+.button {
+  composes: button from global;
+  composes: button--orange-matte from global;
+  width: 100%;
+}

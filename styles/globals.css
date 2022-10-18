@@ -118,8 +118,9 @@ ul {
 }
 
 .title--s {
-  font-size: var(--fs-28);
-  letter-spacing: 2px;
+  font-size: var(--fs-24);
+  line-height: 1.16;
+  letter-spacing: 0.86px;
 }
 
 .title--xs {
@@ -180,6 +181,11 @@ ul {
   font-size: var(--fs-15);
   font-weight: var(--fw-bold);
   color: var(--clr-orange-matte-el);
+}
+
+.checkout-info {
+  font-size: var(--fs-15);
+  font-weight: var(--fw-bold);
 }
 
 .helper-text-diluted-black {

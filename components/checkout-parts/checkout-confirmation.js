@@ -17,31 +17,35 @@ function CheckoutConfirmation() {
         <IconConfirmationSVG />
       </div>
       <div className={classes.copy}>
-        <h3>Thank You For Your Order</h3>
-        <p>You will receive an email confirmation shortly.</p>
+        <h3 className={classes.title}>Thank You For Your Order</h3>
+        <p className='text helper-text-diluted-black'>
+          You will receive an email confirmation shortly.
+        </p>
       </div>
+
       <div className={classes.orderInfo}>
-        <div>
-          <div>
-            <span>Date:</span>
-            <span>{todaysDate}</span>
+        <div className={classes.upper}>
+          <div className={classes.pair}>
+            <span className='label helper-text-diluted-black'>Date:</span>
+            <span className='checkout-info'>{todaysDate}</span>
           </div>
-          <div>
-            <span>Order Number:</span>
-            <span>{orderNum}</span>
+          <div className={classes.pair}>
+            <span className='label helper-text-diluted-black'>Order Number:</span>
+            <span className='checkout-info'>{orderNum}</span>
           </div>
         </div>
-        <div>
-          <span>Grand Total</span>
 
-          <span className='price'>
+        <div className={classes.lower}>
+          <span className={classes.grandTotal}>Grand Total</span>
+
+          <span className={classes.price}>
             € {price.toLocaleString('en', { useGrouping: true })}
           </span>
         </div>
       </div>
 
       <div className={classes.buttonArea}>
-        <button>Back To Home</button>
+        <button className={classes.button}>Back To Home</button>
       </div>
     </div>
   )
