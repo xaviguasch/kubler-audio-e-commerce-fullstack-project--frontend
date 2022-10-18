@@ -57,3 +57,9 @@
 
   cursor: pointer;
 }
+
+.btn:hover,
+.btn:focus {
+  color: var(--clr-orange-matte-el);
+  transition: all 350ms linear;
+}

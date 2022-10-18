@@ -14,7 +14,7 @@ function Header({ cartModalHandler }) {
 
       <h2 className='logo'>KublerAudio</h2>
 
-      <IconCartSVG className='icon-btn' onClick={cartModalHandler} />
+      <IconCartSVG className={classes.icon} onClick={cartModalHandler} />
     </header>
   )
 }

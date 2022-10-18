@@ -21,7 +21,6 @@ function PDMain({ productInfo }) {
 
         <div>
           <form action=''>
-            <input type='number' name='' id='' />
             <button className='button button--orange-matte'>Add to Cart</button>
           </form>
         </div>

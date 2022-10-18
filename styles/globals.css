@@ -66,6 +66,7 @@
   --clr-orange-diluted-el: hsla(22, 93%, 75%, 1);
   --clr-black-dark-el: hsla(0, 0%, 6%, 1);
   --clr-black-overlay-el: hsla(0, 0%, 0%, 0.4);
+  --clr-dark-el: hsl(0, 0%, 30%);
   --clr-greyed-input-el: hsl(0, 0%, 81%);
 
   /* Background  */
@@ -249,16 +250,35 @@ ul {
   border: 1px solid var(--clr-orange-matte-el);
 }
 
+.button--orange-matte:hover,
+.button--orange-matte:focus {
+  background: var(--clr-orange-diluted-el);
+  transition: all 350ms linear;
+}
+
 .button--black {
   color: var(--clr-white);
   background: var(--clr-black);
   border: 1px solid var(--clr-black);
 }
 
+.button--black:hover,
+.button--black:focus {
+  background: var(--clr-dark-el);
+  transition: all 350ms linear;
+}
+
 .button--transparent {
   color: var(--clr-black);
   background: transparent;
   border: 1px solid var(--clr-black);
+}
+
+.button--transparent:hover,
+.button--transparent:focus {
+  color: var(--clr-white);
+  background: var(--clr-black);
+  transition: all 350ms linear;
 }
 
 .button--empty {
@@ -345,7 +365,7 @@ input::placeholder {
   background-color: var(--clr-black-overlay-el);
   width: 100vw;
   height: 100vh;
-  z-index: 0;
+  z-index: 10;
 
   /* transform: translate(-50%, -50%); */
   position: absolute;

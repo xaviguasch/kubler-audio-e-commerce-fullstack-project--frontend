@@ -7,3 +7,13 @@
   padding-top: 28px;
   padding-bottom: 28px;
 }
+
+.icon {
+  composes: icon-btn from global;
+}
+
+.icon:hover path,
+.icon:focus path {
+  fill: var(--clr-orange-matte-el);
+  transition: all 350ms linear;
+}
