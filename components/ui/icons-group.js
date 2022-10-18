@@ -14,7 +14,7 @@ function IconsGroup() {
       <li>
         <Link href='/'>
           <a>
-            <FacebookSVG />
+            <FacebookSVG className={classes.icon} />
           </a>
         </Link>
       </li>
@@ -22,7 +22,7 @@ function IconsGroup() {
       <li>
         <Link href='/'>
           <a>
-            <TwitterSVG />
+            <TwitterSVG className={classes.icon} />
           </a>
         </Link>
       </li>
@@ -30,7 +30,7 @@ function IconsGroup() {
       <li>
         <Link href='/'>
           <a>
-            <InstagramSVG />
+            <InstagramSVG className={classes.icon} />
           </a>
         </Link>
       </li>

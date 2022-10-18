@@ -222,6 +222,12 @@ ul {
   cursor: pointer;
 }
 
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--clr-orange-matte-el);
+  transition: all 350ms linear;
+}
+
 .button {
   text-transform: uppercase;
   text-decoration: none;
