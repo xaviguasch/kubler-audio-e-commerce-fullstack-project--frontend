@@ -1,13 +1,13 @@
 .CompanyMotto {
   composes: h-padding from global;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  composes: flex--col--center from global;
+
   gap: 40px;
 
   text-align: center;
+
+  padding-bottom: 120px;
 }
 
 .imageContainer :global img {
@@ -15,9 +15,7 @@
 }
 
 .copyContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  composes: flex--col--center from global;
+
   gap: 32px;
 }

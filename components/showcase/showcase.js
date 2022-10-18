@@ -18,7 +18,7 @@ function Showcase({ showcaseData }) {
           <p className='text helper-text-semi-diluted-white'>
             {showcaseData.speakerZx9.copy}
           </p>
-          <a className='button button--black' href='/'>
+          <a className='button button--black' href={showcaseData.speakerZx9.url}>
             See product
           </a>
         </div>
@@ -31,7 +31,7 @@ function Showcase({ showcaseData }) {
         }}
       >
         <h2 className='title'>{showcaseData.speakerZx7.name}</h2>
-        <a className='button button--transparent' href='/'>
+        <a className='button button--transparent' href={showcaseData.speakerZx7.url}>
           See product
         </a>
       </div>
@@ -42,7 +42,7 @@ function Showcase({ showcaseData }) {
         </div>
         <div className={classes.showcaseCopyContainer}>
           <h2 className='title'>{showcaseData.yx1Earphones.name}</h2>
-          <a className='button button--transparent' href='/'>
+          <a className='button button--transparent' href={showcaseData.yx1Earphones.url}>
             See product
           </a>
         </div>

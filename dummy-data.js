@@ -562,6 +562,7 @@ export const COPY_DATA = {
         tablet: '/assets/home/tablet/image-speaker-zx9.png',
         mobile: '/assets/home/mobile/image-speaker-zx9.png',
       },
+      url: '/product-detail/zx9-speaker',
     },
     yx1Earphones: {
       name: 'YX1 Earphones',
@@ -571,6 +572,7 @@ export const COPY_DATA = {
         tablet: '/assets/home/tablet/image-earphones-yx1.jpg',
         mobile: '/assets/home/mobile/image-earphones-yx1.jpg',
       },
+      url: '/product-detail/yx1-earphones',
     },
 
     speakerZx7: {
@@ -580,6 +582,7 @@ export const COPY_DATA = {
         tablet: '/assets/home/tablet/image-speaker-zx7.jpg',
         mobile: '/assets/home/mobile/image-speaker-zx7.jpg',
       },
+      url: '/product-detail/zx7-speaker',
     },
   },
   companyMotto: {
