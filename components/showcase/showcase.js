@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import classes from './showcase.module.css'
 
 function Showcase({ showcaseData }) {
@@ -18,9 +20,10 @@ function Showcase({ showcaseData }) {
           <p className='text helper-text-semi-diluted-white'>
             {showcaseData.speakerZx9.copy}
           </p>
-          <a className='button button--black' href={showcaseData.speakerZx9.url}>
-            See product
-          </a>
+
+          <Link href={showcaseData.speakerZx9.url}>
+            <a className='button button--black'>See product</a>
+          </Link>
         </div>
       </div>
 
@@ -31,9 +34,9 @@ function Showcase({ showcaseData }) {
         }}
       >
         <h2 className='title'>{showcaseData.speakerZx7.name}</h2>
-        <a className='button button--transparent' href={showcaseData.speakerZx7.url}>
-          See product
-        </a>
+        <Link href={showcaseData.speakerZx7.url}>
+          <a className='button button--transparent'>See product</a>
+        </Link>
       </div>
 
       <div className={`${classes.showcaseItem} ${classes.showcaseItemC}`}>
@@ -42,9 +45,9 @@ function Showcase({ showcaseData }) {
         </div>
         <div className={classes.showcaseCopyContainer}>
           <h2 className='title'>{showcaseData.yx1Earphones.name}</h2>
-          <a className='button button--transparent' href={showcaseData.yx1Earphones.url}>
-            See product
-          </a>
+          <Link href={showcaseData.yx1Earphones.url}>
+            <a className='button button--transparent'>See product</a>
+          </Link>
         </div>
       </div>
     </div>
@@ -52,3 +55,9 @@ function Showcase({ showcaseData }) {
 }
 
 export default Showcase
+
+{
+  /* <Link href={heroCopy.url}>
+<a className='button button--orange-matte'> {heroCopy.buttonText}</a>
+</Link> */
+}

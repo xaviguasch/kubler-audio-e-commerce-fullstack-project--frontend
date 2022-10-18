@@ -9,7 +9,6 @@ import Showcase from '../components/showcase/showcase'
 import CompanyMotto from '../components/company-motto/company-motto'
 
 function HomePage({ copyData, mappingData }) {
-  console.log(copyData)
   return (
     <div>
       <Hero heroCopy={copyData.hero} />
