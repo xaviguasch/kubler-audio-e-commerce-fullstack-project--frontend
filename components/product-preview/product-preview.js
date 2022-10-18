@@ -3,7 +3,7 @@ import React from 'react'
 import classes from './product-preview.module.css'
 
 function ProductPreview({ ppData }) {
-  const { name, description, images, tag, isReveresed } = ppData
+  const { name, description, images, tag, isReveresed, slug } = ppData
 
   return (
     <li className={classes.ProductPreview}>
@@ -14,7 +14,7 @@ function ProductPreview({ ppData }) {
         {tag && <span className={classes.PPTag}>{tag}</span>}
         <h2 className='title'>{name}</h2>
         <p className='text'>{description}</p>
-        <a className='button button--orange-matte' href='/'>
+        <a className='button button--orange-matte' href={`/product-detail/${slug}`}>
           See product
         </a>
       </div>

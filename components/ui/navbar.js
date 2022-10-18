@@ -15,22 +15,22 @@ function Navbar({ position }) {
 
       <ul className={classes.linkList}>
         <li>
-          <Link href='/home'>
+          <Link href='/'>
             <a className='nav-link'>Home</a>
           </Link>
         </li>
         <li>
-          <Link href='/headphones'>
+          <Link href='/products/headphones'>
             <a className='nav-link'>Headphones</a>
           </Link>
         </li>
         <li>
-          <Link href='/speakers'>
+          <Link href='/products/speakers'>
             <a className='nav-link'>Speakers</a>
           </Link>
         </li>
         <li>
-          <Link href='/earphones'>
+          <Link href='/products/earphones'>
             <a className='nav-link'>Headphones</a>
           </Link>
         </li>

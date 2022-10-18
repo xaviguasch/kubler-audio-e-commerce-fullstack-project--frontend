@@ -641,6 +641,7 @@ export const MAPPING_DATA = {
           mobile:
             '/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg',
         },
+        slug: 'xx99-mark-two-headphones',
       },
       {
         name: 'XX99 Mark I Headphones',
@@ -654,6 +655,7 @@ export const MAPPING_DATA = {
           mobile:
             '/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg',
         },
+        slug: 'xx99-mark-one-headphones',
       },
       {
         name: 'XX59 Headphones',
@@ -667,6 +669,7 @@ export const MAPPING_DATA = {
           mobile:
             '/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg',
         },
+        slug: 'xx59-headphones',
       },
     ],
 
@@ -681,6 +684,7 @@ export const MAPPING_DATA = {
           tablet: '/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg',
           mobile: '/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg',
         },
+        slug: 'zx9-speaker',
       },
       {
         name: 'ZX7 speaker',
@@ -691,6 +695,7 @@ export const MAPPING_DATA = {
           tablet: '/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg',
           mobile: '/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg',
         },
+        slug: 'zx7-speaker',
       },
     ],
 
@@ -706,6 +711,7 @@ export const MAPPING_DATA = {
           tablet: '/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg',
           mobile: '/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg',
         },
+        slug: 'yx1-earphones',
       },
     ],
   },
