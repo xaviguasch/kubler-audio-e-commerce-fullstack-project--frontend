@@ -33,7 +33,7 @@ function PDAlsoLike({ productInfo }) {
                 href={`/product-detail/${other.slug}`}
                 className='button button--orange-matte'
               >
-                <button className='button button--orange-matte'>See Product</button>
+                <a className='button button--orange-matte'>See Product</a>
               </Link>
             </li>
           )

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Link from 'next/link'
+
 import classes from './product-preview.module.css'
 
 function ProductPreview({ ppData }) {
@@ -14,9 +16,10 @@ function ProductPreview({ ppData }) {
         {tag && <span className={classes.PPTag}>{tag}</span>}
         <h2 className='title'>{name}</h2>
         <p className='text'>{description}</p>
-        <a className='button button--orange-matte' href={`/product-detail/${slug}`}>
-          See product
-        </a>
+
+        <Link href={`/product-detail/${slug}`}>
+          <a className='button button--orange-matte'>See product</a>
+        </Link>
       </div>
     </li>
   )
