@@ -8,6 +8,10 @@
   padding-bottom: 28px;
 }
 
+.logo {
+  composes: logo from global;
+}
+
 .icon {
   composes: icon-btn from global;
 }
@@ -16,4 +20,16 @@
 .icon:focus path {
   fill: var(--clr-orange-matte-el);
   transition: all 350ms linear;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .logo {
+    margin-left: 42px;
+    margin-right: auto;
+  }
 }

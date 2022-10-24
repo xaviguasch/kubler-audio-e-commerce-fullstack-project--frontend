@@ -385,3 +385,16 @@ input::placeholder {
 
   padding: 32px 28px;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  /* Utility styles */
+  .h-padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

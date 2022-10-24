@@ -12,7 +12,7 @@ function Header({ cartModalHandler }) {
     <header className={`${classes.Header} h-padding`}>
       <Navbar position='nav_header' />
 
-      <h2 className='logo'>KublerAudio</h2>
+      <h2 className={classes.logo}>KublerAudio</h2>
 
       <IconCartSVG className={classes.icon} onClick={cartModalHandler} />
     </header>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import Link from 'next/link'
+
 import CartItem from './cart-item'
 
 import classes from './cart.module.css'
@@ -31,15 +33,16 @@ function Cart({ isOpen, cartModalHandler, dummyData }) {
             <p className='price'>€ {price.toLocaleString('en', { useGrouping: true })}</p>
           </div>
 
-          <button
-            className='button button--orange-matte'
-            onClick={(e) => {
-              e.stopPropagation()
-              console.log('hola')
-            }}
-          >
-            Checkout
-          </button>
+          <Link href='/checkout'>
+            <a
+              className='button button--orange-matte'
+              onClick={(e) => {
+                e.stopPropagation()
+              }}
+            >
+              Checkout
+            </a>
+          </Link>
         </div>
       </div>
     </div>

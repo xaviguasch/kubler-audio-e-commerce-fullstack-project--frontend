@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Link from 'next/link'
+
 import classes from './checkout-confirmation.module.css'
 
 import IconConfirmationSVG from '../../public/assets/icons/icon-order-confirmation.svg'
@@ -45,7 +47,9 @@ function CheckoutConfirmation() {
       </div>
 
       <div className={classes.buttonArea}>
-        <button className={classes.button}>Back To Home</button>
+        <Link href='/'>
+          <button className={classes.button}>Back To Home</button>
+        </Link>
       </div>
     </div>
   )

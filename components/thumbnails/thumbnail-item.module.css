@@ -32,9 +32,10 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 0%);
 
-  max-width: 50%;
+  width: 50%;
+  max-width: 170px;
   height: auto;
 }
 
