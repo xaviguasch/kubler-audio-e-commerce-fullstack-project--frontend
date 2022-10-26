@@ -3,13 +3,27 @@ import Link from 'next/link'
 import classes from './hero.module.css'
 
 function Hero({ heroCopy }) {
+  const css = `
+  @media (max-width: 650px) {
+      .backimage {
+          background-image: url(${heroCopy.backgroundImg.mobile});
+      }
+  }
+  @media (min-width: 600px) {
+      .backimage {
+        background-image: url(${heroCopy.backgroundImg.tablet});
+      }
+  }
+  @media (min-width: 900px) {
+    .backimage {
+      background-image: url(${heroCopy.backgroundImg.desktop});
+    }
+}
+`
+
   return (
-    <div
-      className={`${classes.Hero} h-padding`}
-      style={{
-        backgroundImage: `url(${heroCopy.backgroundImg.mobile})`,
-      }}
-    >
+    <div className={`${classes.Hero} h-padding backimage`}>
+      <style scoped>{css}</style>
       <div className={classes.copy}>
         <div className='title-area'>
           <span className='tag helper-text-diluted-white'>{heroCopy.tag}</span>

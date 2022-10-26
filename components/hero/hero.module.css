@@ -21,3 +21,11 @@
 .copy :global .title {
   margin-top: 16px;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+}
