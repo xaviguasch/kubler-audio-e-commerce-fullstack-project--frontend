@@ -1,7 +1,5 @@
 .ThumbnailItemData {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  composes: flex--col--end from global;
 
   width: 100%;
 
@@ -13,10 +11,7 @@
 }
 
 .thumbnailContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  composes: flex--col--end from global;
 
   width: 100%;
 
@@ -30,19 +25,18 @@
 
 .thumbnailImg {
   position: absolute;
-  top: 0;
+  bottom: 28%;
   left: 50%;
   transform: translate(-50%, 0%);
 
   width: 50%;
-  max-width: 170px;
+  max-width: 160px;
   height: auto;
 }
 
 .btnContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  composes: flex--row--center from global;
+
   gap: 13px;
 
   margin-top: 16px;
@@ -71,6 +65,21 @@
 
 /* Tablet */
 @media (min-width: 600px) {
+  .ThumbnailItemData {
+    height: 217px;
+  }
+
+  .thumbnailImg {
+    bottom: 43%;
+
+    transform: translate(-50%, 10%);
+
+    width: 80%;
+    max-width: 140px;
+    height: auto;
+  }
+
   .thumbnailContainer {
+    height: 165px;
   }
 }

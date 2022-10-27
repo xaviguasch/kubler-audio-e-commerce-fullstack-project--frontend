@@ -361,6 +361,13 @@ input::placeholder {
   align-items: flex-start;
 }
 
+.flex--col--end {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
 .overlay {
   background-color: var(--clr-black-overlay-el);
   width: 100vw;
@@ -398,6 +405,11 @@ input::placeholder {
 
     line-height: 1.035;
     letter-spacing: 2px;
+  }
+
+  .title--xs {
+    font-size: var(--fs-15);
+    letter-spacing: 1.07px;
   }
 
   /* Utility styles */
