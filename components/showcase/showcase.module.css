@@ -1,8 +1,5 @@
 .Showcase {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  composes: flex--col--center from global;
 
   gap: 24px;
 
@@ -22,10 +19,8 @@
 
   padding: 55px 24px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  composes: flex--col--center from global;
+
   gap: 32px;
 }
 
@@ -35,11 +30,11 @@
 }
 
 .copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  composes: flex--col--center from global;
+
   gap: 24px;
+
+  max-width: 350px;
 }
 
 .widthHelper {
@@ -51,17 +46,15 @@
   background-repeat: no-repeat;
   padding: 101px 24px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  composes: flex--col--center from global;
+
   align-items: flex-start;
   gap: 32px;
 }
 
 .showcaseItemC {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  composes: flex--col--stretch from global;
+
   gap: 24px;
 }
 
@@ -76,9 +69,42 @@
 
   padding: 42px 24px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  composes: flex--col--center from global;
+
   align-items: flex-start;
   gap: 32px;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .showcaseItemA {
+    background: url('/assets/icons/pattern-circles.svg') no-repeat 50% 120%;
+    background-color: var(--clr-orange-matte-el);
+    background-size: 140%;
+
+    padding-top: 52px;
+    padding-bottom: 64px;
+
+    gap: 64px;
+  }
+
+  .imgA {
+    width: 31%;
+  }
+
+  .copy :global .button {
+    margin-top: 16px;
+  }
+
+  .widthHelper {
+    max-width: unset;
+  }
+
+  .showcaseItemB {
+    padding: 101px 64px;
+  }
 }

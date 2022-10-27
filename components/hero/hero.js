@@ -5,24 +5,24 @@ import classes from './hero.module.css'
 function Hero({ heroCopy }) {
   const css = `
   @media (max-width: 650px) {
-      .backimage {
+      .backimageHero {
           background-image: url(${heroCopy.backgroundImg.mobile});
       }
   }
   @media (min-width: 600px) {
-      .backimage {
+      .backimageHero {
         background-image: url(${heroCopy.backgroundImg.tablet});
       }
   }
   @media (min-width: 900px) {
-    .backimage {
+    .backimageHero {
       background-image: url(${heroCopy.backgroundImg.desktop});
     }
 }
 `
 
   return (
-    <div className={`${classes.Hero} h-padding backimage`}>
+    <div className={`${classes.Hero} h-padding backimageHero`}>
       <style scoped>{css}</style>
       <div className={classes.copy}>
         <div className='title-area'>

@@ -3,7 +3,22 @@ import Link from 'next/link'
 import classes from './showcase.module.css'
 
 function Showcase({ showcaseData }) {
-  console.log(showcaseData)
+  const css = `
+    .backImageShowcaseItemB {
+        background-image: url(${showcaseData.speakerZx7.images.mobile});
+    }
+    @media (min-width: 600px) {
+        .backImageShowcaseItemB {
+          background-image: url(${showcaseData.speakerZx7.images.tablet});
+        }
+    }
+    @media (min-width: 900px) {
+      .backImageShowcaseItemB {
+        background-image: url(${showcaseData.speakerZx7.images.desktop});
+      }
+    }
+  `
+
   return (
     <div className={`${classes.Showcase} h-padding`}>
       <div className={`${classes.showcaseItem} ${classes.showcaseItemA}`}>
@@ -28,11 +43,10 @@ function Showcase({ showcaseData }) {
       </div>
 
       <div
-        className={`${classes.showcaseItem} ${classes.showcaseItemB}`}
-        style={{
-          backgroundImage: `url(${showcaseData.speakerZx7.images.mobile})`,
-        }}
+        className={`${classes.showcaseItem} ${classes.showcaseItemB} backImageShowcaseItemB`}
       >
+        <style scoped>{css}</style>
+
         <h2 className='title'>{showcaseData.speakerZx7.name}</h2>
         <Link href={showcaseData.speakerZx7.url}>
           <a className='button button--transparent'>See product</a>
@@ -55,9 +69,3 @@ function Showcase({ showcaseData }) {
 }
 
 export default Showcase
-
-{
-  /* <Link href={heroCopy.url}>
-<a className='button button--orange-matte'> {heroCopy.buttonText}</a>
-</Link> */
-}
