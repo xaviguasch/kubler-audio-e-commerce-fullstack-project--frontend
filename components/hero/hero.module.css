@@ -4,22 +4,28 @@
 
   text-align: center;
 
+  composes: flex--row--center from global;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
 }
 
 .copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  composes: flex--col--center from global;
+
   gap: 24px;
+
+  max-width: 380px;
 }
 
 /* Only to have descendant selectors in CSS Modules */
 .copy :global .title {
   margin-top: 16px;
+}
+
+.copy :global .text {
+  max-width: 350px;
 }
 
 /* ================== */
@@ -28,8 +34,16 @@
 
 /* Tablet */
 @media (min-width: 600px) {
+  .copy :global .title {
+    margin-top: 24px;
+  }
+
   .Hero {
     padding-top: 126px;
     padding-bottom: 167px;
+  }
+
+  .Hero :global .button {
+    margin-top: 16px;
   }
 }
