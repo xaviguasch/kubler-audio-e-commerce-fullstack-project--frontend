@@ -28,4 +28,8 @@
 
 /* Tablet */
 @media (min-width: 600px) {
+  .Hero {
+    padding-top: 126px;
+    padding-bottom: 167px;
+  }
 }

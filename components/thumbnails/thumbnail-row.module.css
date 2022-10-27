@@ -3,8 +3,26 @@
 }
 
 .thumbnailList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  composes: flex--col--stretch from global;
+
   gap: 16px;
+}
+
+.thumbnailList li {
+  width: 100%;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .thumbnailList {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+  }
 }

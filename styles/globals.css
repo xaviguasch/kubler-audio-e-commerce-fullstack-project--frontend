@@ -392,6 +392,14 @@ input::placeholder {
 
 /* Tablet */
 @media (min-width: 600px) {
+  /* Typography */
+  .title--l {
+    font-size: var(--fs-56);
+
+    line-height: 1.035;
+    letter-spacing: 2px;
+  }
+
   /* Utility styles */
   .h-padding {
     padding-left: 40px;
