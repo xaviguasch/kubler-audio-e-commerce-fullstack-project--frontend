@@ -23,3 +23,17 @@
   align-items: center;
   gap: 16px;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .nav_footer .linkList {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    gap: 34px;
+  }
+}

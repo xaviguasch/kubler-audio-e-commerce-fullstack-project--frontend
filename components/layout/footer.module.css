@@ -19,6 +19,24 @@
 
 /* Tablet */
 @media (min-width: 600px) {
+  .Footer {
+    display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      'title title'
+      'nav nav'
+      'copyText copyText'
+      'copyRight iconsGroupContainer';
+
+    row-gap: 32px;
+
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
   .titleArea {
     grid-area: title;
 
@@ -39,21 +57,12 @@
     grid-area: copyRight;
 
     text-align: left;
+
+    margin-top: 48px;
   }
   .iconsGroupContainer {
     grid-area: iconsGroupContainer;
-  }
 
-  .Footer {
-    display: grid;
-
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-
-    grid-template-areas:
-      'title title'
-      'nav nav'
-      'copyText copyText'
-      'copyRight iconsGroupContainer';
+    margin-top: 48px;
   }
 }
