@@ -12,3 +12,48 @@
 
   text-align: center;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .titleArea {
+    grid-area: title;
+
+    text-align: left;
+  }
+
+  .navInFooterContainer {
+    grid-area: nav;
+  }
+
+  .copyText {
+    grid-area: copyText;
+
+    text-align: left;
+  }
+
+  .copyRight {
+    grid-area: copyRight;
+
+    text-align: left;
+  }
+  .iconsGroupContainer {
+    grid-area: iconsGroupContainer;
+  }
+
+  .Footer {
+    display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      'title title'
+      'nav nav'
+      'copyText copyText'
+      'copyRight iconsGroupContainer';
+  }
+}

@@ -1,8 +1,6 @@
 .IconsGroup {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  composes: flex--row--center from global;
+
   gap: 16px;
 }
 
@@ -14,4 +12,15 @@
 .icon:focus path {
   fill: var(--clr-orange-matte-el);
   transition: all 350ms linear;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .IconsGroup {
+    justify-content: flex-end;
+  }
 }
