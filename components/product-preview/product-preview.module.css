@@ -14,3 +14,11 @@
   composes: tag from global;
   color: var(--clr-orange-matte-el);
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+}

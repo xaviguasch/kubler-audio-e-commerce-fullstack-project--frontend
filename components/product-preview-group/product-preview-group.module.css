@@ -5,9 +5,18 @@
 }
 
 .PPGList {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  composes: flex--col--center from global;
+
   gap: 120px;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .ProductPreviewGroup {
+    padding-top: 120px;
+  }
 }
