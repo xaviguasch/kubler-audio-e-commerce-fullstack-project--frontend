@@ -107,4 +107,20 @@
   .showcaseItemB {
     padding: 101px 64px;
   }
+
+  .showcaseItemC {
+    flex-direction: row;
+
+    gap: 12px;
+  }
+
+  .showcaseItemC .showcaseImgContainer,
+  .showcaseItemC .showcaseCopyContainer {
+    width: 50%;
+    /* flex: 1 1 0; */
+  }
+
+  .showcaseCopyContainer {
+    text-align: left;
+  }
 }

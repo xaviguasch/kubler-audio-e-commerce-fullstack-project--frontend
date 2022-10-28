@@ -55,7 +55,19 @@ function Showcase({ showcaseData }) {
 
       <div className={`${classes.showcaseItem} ${classes.showcaseItemC}`}>
         <div className={classes.showcaseImgContainer}>
-          <img src={showcaseData.yx1Earphones.images.mobile} alt='' />
+          <picture>
+            <source
+              srcset={showcaseData.yx1Earphones.images.desktop}
+              media='(min-width: 900px)'
+              alt=''
+            />
+            <source
+              srcset={showcaseData.yx1Earphones.images.tablet}
+              media='(min-width: 600px)'
+              alt=''
+            />
+            <img src={showcaseData.yx1Earphones.images.mobile} alt='' />
+          </picture>
         </div>
         <div className={classes.showcaseCopyContainer}>
           <h2 className='title'>{showcaseData.yx1Earphones.name}</h2>
