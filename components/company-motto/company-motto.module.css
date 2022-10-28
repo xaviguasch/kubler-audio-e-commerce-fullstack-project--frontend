@@ -19,3 +19,14 @@
 
   gap: 32px;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .copyContainer {
+    max-width: 575px;
+  }
+}

@@ -4,7 +4,19 @@ const CompanyMotto = ({ companyMottoData }) => {
   return (
     <div className={classes.CompanyMotto}>
       <div className={classes.imageContainer}>
-        <img src={companyMottoData.images.mobile} alt='' />
+        <picture>
+          <source
+            srcset={companyMottoData.images.desktop}
+            media='(min-width: 900px)'
+            alt=''
+          />
+          <source
+            srcset={companyMottoData.images.tablet}
+            media='(min-width: 600px)'
+            alt=''
+          />
+          <img src={companyMottoData.images.mobile} alt='' />
+        </picture>
       </div>
       <div className={classes.copyContainer}>
         <h2 className='title'>{companyMottoData.title}</h2>
