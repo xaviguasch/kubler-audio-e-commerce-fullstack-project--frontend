@@ -6,3 +6,15 @@
 
   text-align: center;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .SectionHeader {
+    padding-top: 104px;
+    padding-bottom: 96px;
+  }
+}
