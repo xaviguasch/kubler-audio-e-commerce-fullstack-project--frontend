@@ -8,8 +8,13 @@
   composes: flex--col--center from global;
 
   gap: 24px;
+
+  max-width: 572px;
 }
 
+.copy :global(.title) {
+  max-width: 380px;
+}
 .PPTag {
   composes: tag from global;
   color: var(--clr-orange-matte-el);
@@ -21,4 +26,12 @@
 
 /* Tablet */
 @media (min-width: 600px) {
+  .ProductPreview {
+    gap: 52px;
+  }
+
+  .copy :global(.title) {
+    margin-top: -8px;
+    margin-bottom: 8px;
+  }
 }

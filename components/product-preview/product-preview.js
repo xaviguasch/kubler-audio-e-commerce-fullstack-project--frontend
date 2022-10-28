@@ -7,10 +7,15 @@ import classes from './product-preview.module.css'
 function ProductPreview({ ppData }) {
   const { name, description, images, tag, isReveresed, slug } = ppData
 
+  console.log(images)
   return (
     <li className={classes.ProductPreview}>
-      <div>
-        <img src={images.desktop} alt='' />
+      <div className={classes.imageContainer}>
+        <picture>
+          <source srcset={images.desktop} media='(min-width: 900px)' alt='' />
+          <source srcset={images.tablet} media='(min-width: 600px)' alt='' />
+          <img src={images.desktop} alt='' />
+        </picture>
       </div>
       <div className={classes.copy}>
         {tag && <span className={classes.PPTag}>{tag}</span>}
