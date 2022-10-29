@@ -4,6 +4,10 @@
   gap: 32px;
 }
 
+.imageContainer img {
+  border-radius: 8px;
+}
+
 .copy {
   composes: flex--col--center from global;
 

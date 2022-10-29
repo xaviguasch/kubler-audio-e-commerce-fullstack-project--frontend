@@ -12,8 +12,8 @@ function ProductPreview({ ppData }) {
     <li className={classes.ProductPreview}>
       <div className={classes.imageContainer}>
         <picture>
-          <source srcset={images.desktop} media='(min-width: 900px)' alt='' />
-          <source srcset={images.tablet} media='(min-width: 600px)' alt='' />
+          <source srcSet={images.desktop} media='(min-width: 900px)' alt='' />
+          <source srcSet={images.tablet} media='(min-width: 600px)' alt='' />
           <img src={images.desktop} alt='' />
         </picture>
       </div>

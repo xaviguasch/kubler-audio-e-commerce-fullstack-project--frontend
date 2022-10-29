@@ -97,7 +97,8 @@ ul {
 /* Typography */
 /* ================== */
 
-.title {
+.title,
+.title--show {
   font-size: var(--fs-28);
   font-weight: var(--fw-bold);
 

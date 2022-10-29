@@ -6,12 +6,12 @@ const CompanyMotto = ({ companyMottoData }) => {
       <div className={classes.imageContainer}>
         <picture>
           <source
-            srcset={companyMottoData.images.desktop}
+            srcSet={companyMottoData.images.desktop}
             media='(min-width: 900px)'
             alt=''
           />
           <source
-            srcset={companyMottoData.images.tablet}
+            srcSet={companyMottoData.images.tablet}
             media='(min-width: 600px)'
             alt=''
           />
