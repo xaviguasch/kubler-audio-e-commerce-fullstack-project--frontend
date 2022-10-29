@@ -8,3 +8,31 @@
 .gridImg {
   border-radius: 8px;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .PDGallery {
+    grid-template-columns: 40% 57%;
+    grid-template-rows: 48% 48%;
+    grid-row-gap: 5%;
+    grid-column-gap: 3%;
+
+    grid-template-areas:
+      'a c'
+      'b c';
+  }
+
+  .picA {
+    grid-area: a;
+  }
+  .picB {
+    grid-area: b;
+  }
+  .picC {
+    grid-area: c;
+  }
+}
