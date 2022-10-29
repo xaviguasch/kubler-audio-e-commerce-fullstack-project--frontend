@@ -1,7 +1,6 @@
 .PDMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  composes: flex--col--center from global;
+
   align-items: flex-start;
 
   gap: 32px;
@@ -22,4 +21,38 @@
 .PDMTag {
   composes: tag from global;
   color: var(--clr-orange-matte-el);
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .PDMain {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: unset;
+  }
+
+  .pictureContainer {
+    width: 50%;
+
+    padding-right: 64px;
+  }
+
+  .containerInfo {
+    width: 50%;
+  }
+
+  .copy {
+    gap: 32px;
+  }
+
+  .PDMTag {
+    font-size: var(--fs-12);
+    letter-spacing: 8.5px;
+  }
 }

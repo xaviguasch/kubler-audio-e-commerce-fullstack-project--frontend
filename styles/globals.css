@@ -97,8 +97,7 @@ ul {
 /* Typography */
 /* ================== */
 
-.title,
-.title--show {
+.title {
   font-size: var(--fs-28);
   font-weight: var(--fw-bold);
 
@@ -139,6 +138,15 @@ ul {
   font-size: var(--fs-13);
   letter-spacing: 0.93px;
   color: var(--clr-orange-matte-el);
+}
+
+.title--show {
+  font-size: var(--fs-28);
+  font-weight: var(--fw-bold);
+
+  line-height: 1.15;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .text {

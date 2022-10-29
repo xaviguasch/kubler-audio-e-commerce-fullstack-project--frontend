@@ -7,14 +7,18 @@ function PDMain({ productInfo }) {
 
   return (
     <div className={classes.PDMain}>
-      <div>
-        <img src={image.mobile} alt='' />
+      <div className={classes.pictureContainer}>
+        <picture>
+          <source srcSet={image.desktop} media='(min-width: 900px)' alt='' />
+          <source srcSet={image.tablet} media='(min-width: 600px)' alt='' />
+          <img src={image.mobile} alt='' />
+        </picture>
       </div>
 
       <div className={classes.containerInfo}>
         <div className={classes.copy}>
           {isItNew ? <span className={classes.PDMTag}>New Product</span> : null}
-          <h2 className='title'>{name}</h2>
+          <h2 className='title--show'>{name}</h2>
           <p className='text helper-text-diluted-black'>{description}</p>
           <p className='price'>€ {price.toLocaleString('en', { useGrouping: true })}</p>
         </div>
