@@ -1,8 +1,16 @@
 .ProductDisplay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  composes: flex--col--center from global;
 
   gap: 88px;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .ProductDisplay {
+    gap: 120px;
+  }
 }
