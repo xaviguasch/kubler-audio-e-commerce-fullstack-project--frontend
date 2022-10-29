@@ -22,7 +22,7 @@ function PDFeatures({ productInfo }) {
 
   return (
     <div className={classes.PDFeatures}>
-      <div className={classes.container}>
+      <div className={classes.containerFeatures}>
         <h3 className='title title--s__alt'>Features</h3>
         <div className={classes.featuresInfo}>
           {features.split('\n').map((i) => (
@@ -33,7 +33,7 @@ function PDFeatures({ productInfo }) {
         </div>
       </div>
 
-      <div className={classes.container}>
+      <div className={classes.containerBox}>
         <h3 className='title title--s__alt'>In The Box</h3>
         <ul>
           {includes.map((extras) => {
