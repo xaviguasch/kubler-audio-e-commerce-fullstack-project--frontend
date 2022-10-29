@@ -4,12 +4,23 @@
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  composes: flex--col--center from global;
+
   align-items: initial;
 
   gap: 120px;
 
   margin-top: 24px;
+}
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .ProductDetailPage {
+    padding-top: 32px;
+    padding-bottom: 0;
+  }
 }
