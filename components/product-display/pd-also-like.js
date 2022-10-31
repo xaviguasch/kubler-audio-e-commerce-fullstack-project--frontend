@@ -27,8 +27,12 @@ function PDAlsoLike({ productInfo }) {
         {others.map((other) => {
           return (
             <li key={other.name} className={classes.item}>
-              <img src={other.image.mobile} alt='' />
-              <h2>{other.name}</h2>
+              <picture>
+                <source srcSet={other.image.desktop} media='(min-width: 900px)' alt='' />
+                <source srcSet={other.image.tablet} media='(min-width: 600px)' alt='' />
+                <img src={other.image.mobile} alt='' />
+              </picture>
+              <h2 className={classes.productName}>{other.name}</h2>
               <Link
                 href={`/product-detail/${other.slug}`}
                 className='button button--orange-matte'
