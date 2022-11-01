@@ -20,7 +20,7 @@ function Showcase({ showcaseData }) {
   `
 
   return (
-    <div className={`${classes.Showcase} h-padding`}>
+    <div className={classes.Showcase}>
       <div className={`${classes.showcaseItem} ${classes.showcaseItemA}`}>
         <img
           className={classes.imgA}

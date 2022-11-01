@@ -3,6 +3,7 @@
 
 .container {
   padding-top: 40px;
+  composes: h-padding from global;
 
   composes: flex--col--stretch from global;
 

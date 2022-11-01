@@ -5,7 +5,7 @@ function ProductPreviewGroup({ previewData }) {
   console.log(previewData)
 
   return (
-    <div className={`${classes.ProductPreviewGroup} h-padding`}>
+    <div className={classes.ProductPreviewGroup}>
       <ul className={classes.PPGList}>
         {previewData.map((pData) => (
           <ProductPreview key={pData.name} ppData={pData} />

@@ -1,6 +1,4 @@
 .CompanyMotto {
-  composes: h-padding from global;
-
   composes: flex--col--center from global;
 
   gap: 40px;
@@ -27,7 +25,10 @@
 /* Tablet */
 @media (min-width: 600px) {
   .CompanyMotto {
-    padding-bottom: 96px;
+    padding-left: 0;
+    padding-right: 0;
+
+    gap: 64px;
   }
 
   .copyContainer {
