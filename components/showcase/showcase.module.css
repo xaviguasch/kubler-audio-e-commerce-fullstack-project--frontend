@@ -24,7 +24,7 @@
   gap: 32px;
 }
 
-.imgA {
+.imgAContainer {
   width: 62%;
   height: auto;
 }
@@ -92,7 +92,7 @@
     gap: 64px;
   }
 
-  .imgA {
+  .imgAContainer {
     width: 31%;
   }
 
@@ -122,5 +122,73 @@
 
   .showcaseCopyContainer {
     text-align: left;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .Showcase {
+    gap: 48px;
+  }
+
+  .showcaseItemA {
+    background: url('/assets/icons/pattern-circles.svg') no-repeat -200px 0%;
+    background-color: var(--clr-orange-matte-el);
+    background-size: 100%;
+
+    padding: unset;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+    gap: unset;
+
+    overflow: hidden;
+  }
+
+  .imgAContainer {
+    width: 50%;
+
+    position: relative;
+  }
+
+  .imgA {
+    position: absolute;
+    bottom: -10px;
+    right: 10%;
+    width: 80%;
+
+    max-width: 320px;
+  }
+
+  .showcaseItemA .copyAContainer {
+    width: 50%;
+
+    height: 100%;
+
+    padding-top: 88px;
+    padding-bottom: 82px;
+    padding-left: 48px;
+    padding-right: 32px;
+  }
+
+  .copy {
+    align-items: flex-start;
+
+    text-align: left;
+    max-width: unset;
+  }
+
+  .showcaseItemB {
+    padding-left: 64px;
+  }
+
+  .showcaseItemC {
+    gap: 30px;
+  }
+
+  .showcaseItemC .showcaseCopyContainer {
+    padding-left: 64px;
   }
 }

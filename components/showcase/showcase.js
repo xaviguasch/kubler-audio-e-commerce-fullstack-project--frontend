@@ -22,23 +22,27 @@ function Showcase({ showcaseData }) {
   return (
     <div className={classes.Showcase}>
       <div className={`${classes.showcaseItem} ${classes.showcaseItemA}`}>
-        <img
-          className={classes.imgA}
-          src={showcaseData.speakerZx9.images.desktop}
-          alt=''
-        />
+        <div className={classes.imgAContainer}>
+          <img
+            className={classes.imgA}
+            src={showcaseData.speakerZx9.images.desktop}
+            alt=''
+          />
+        </div>
 
-        <div className={classes.copy}>
-          <h2 className={`title title--l helper-text-white ${classes.widthHelper}`}>
-            {showcaseData.speakerZx9.name}
-          </h2>
-          <p className='text helper-text-semi-diluted-white'>
-            {showcaseData.speakerZx9.copy}
-          </p>
+        <div className={classes.copyAContainer}>
+          <div className={classes.copy}>
+            <h2 className={`title title--l helper-text-white ${classes.widthHelper}`}>
+              {showcaseData.speakerZx9.name}
+            </h2>
+            <p className='text helper-text-semi-diluted-white'>
+              {showcaseData.speakerZx9.copy}
+            </p>
 
-          <Link href={showcaseData.speakerZx9.url}>
-            <a className='button button--black'>See product</a>
-          </Link>
+            <Link href={showcaseData.speakerZx9.url}>
+              <a className='button button--black'>See product</a>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -47,7 +51,7 @@ function Showcase({ showcaseData }) {
       >
         <style scoped>{css}</style>
 
-        <h2 className='title'>{showcaseData.speakerZx7.name}</h2>
+        <h2 className='title--show'>{showcaseData.speakerZx7.name}</h2>
         <Link href={showcaseData.speakerZx7.url}>
           <a className='button button--transparent'>See product</a>
         </Link>

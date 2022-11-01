@@ -3,6 +3,7 @@
 
 .container {
   padding-top: 40px;
+  padding-bottom: 120px;
   composes: h-padding from global;
 
   composes: flex--col--stretch from global;
@@ -18,7 +19,18 @@
 @media (min-width: 600px) {
   .container {
     padding-top: 96px;
+    padding-bottom: 96px;
 
     gap: 96px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .container {
+    padding-top: 120px;
+    padding-bottom: 200px;
+
+    gap: 168px;
   }
 }

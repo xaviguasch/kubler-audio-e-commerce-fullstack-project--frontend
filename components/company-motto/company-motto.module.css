@@ -4,8 +4,6 @@
   gap: 40px;
 
   text-align: center;
-
-  padding-bottom: 120px;
 }
 
 .imageContainer :global img {
