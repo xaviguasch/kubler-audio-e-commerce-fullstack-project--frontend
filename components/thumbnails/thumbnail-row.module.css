@@ -25,3 +25,10 @@
     gap: 10px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .thumbnailList {
+    gap: 30px;
+  }
+}

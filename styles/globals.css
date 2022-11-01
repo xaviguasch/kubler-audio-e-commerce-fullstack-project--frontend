@@ -445,3 +445,18 @@ input::placeholder {
     padding-right: 40px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  /* Typography */
+  .title--xs {
+    font-size: var(--fs-18);
+    letter-spacing: 1.29px;
+  }
+
+  /* Utility styles */
+  .h-padding {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}

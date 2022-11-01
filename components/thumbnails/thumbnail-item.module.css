@@ -83,3 +83,24 @@
     height: 165px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .ThumbnailItemData {
+    height: 284px;
+  }
+
+  .thumbnailImg {
+    bottom: 40%;
+
+    transform: translate(-50%, 10%);
+
+    width: 80%;
+    max-width: 190px;
+    height: auto;
+  }
+
+  .thumbnailContainer {
+    height: 204px;
+  }
+}

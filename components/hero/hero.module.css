@@ -47,3 +47,23 @@
     margin-top: 16px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .Hero {
+    padding-top: 128px;
+    padding-bottom: 158px;
+
+    justify-content: flex-start;
+  }
+
+  .copy {
+    gap: 24px;
+
+    align-items: flex-start;
+
+    text-align: left;
+
+    max-width: 380px;
+  }
+}
