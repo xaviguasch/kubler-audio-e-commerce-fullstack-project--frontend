@@ -33,3 +33,28 @@
     max-width: 575px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .CompanyMotto {
+    flex-direction: row;
+
+    gap: 0;
+  }
+
+  .imageContainer {
+    flex: 1 1 0;
+  }
+
+  .copyHalf {
+    flex: 1 1 0;
+    text-align: left;
+    order: -1;
+  }
+
+  .copyContainer {
+    max-width: 445px;
+
+    padding-right: 32px;
+  }
+}

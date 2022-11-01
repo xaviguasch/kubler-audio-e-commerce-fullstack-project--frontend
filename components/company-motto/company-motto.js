@@ -18,9 +18,11 @@ const CompanyMotto = ({ companyMottoData }) => {
           <img src={companyMottoData.images.mobile} alt='' />
         </picture>
       </div>
-      <div className={classes.copyContainer}>
-        <h2 className='title'>{companyMottoData.title}</h2>
-        <p className='text helper-text-diluted-black'>{companyMottoData.copy}</p>
+      <div className={classes.copyHalf}>
+        <div className={classes.copyContainer}>
+          <h2 className='title'>{companyMottoData.title}</h2>
+          <p className='text helper-text-diluted-black'>{companyMottoData.copy}</p>
+        </div>
       </div>
     </div>
   )
