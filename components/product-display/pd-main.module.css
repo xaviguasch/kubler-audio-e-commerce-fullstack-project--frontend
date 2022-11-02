@@ -56,3 +56,24 @@
     letter-spacing: 8.5px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .pictureContainer {
+    width: 50%;
+
+    padding-right: unset;
+  }
+
+  .containerInfo {
+    padding-left: 72px;
+  }
+
+  .copy {
+    max-width: 445px;
+  }
+
+  .copy :global(.title--show) {
+    max-width: 250px;
+  }
+}

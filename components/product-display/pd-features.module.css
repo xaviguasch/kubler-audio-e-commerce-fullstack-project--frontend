@@ -2,6 +2,8 @@
   composes: flex--col--left from global;
 
   gap: 88px;
+
+  width: 100%;
 }
 
 .containerFeatures,
@@ -42,5 +44,31 @@
 
   .containerBox :global(ul) {
     line-height: 200%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .PDFeatures {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+  }
+
+  .containerFeatures {
+    max-width: 635px;
+    padding-right: 64px;
+  }
+
+  .featuresInfo {
+    max-width: unset;
+  }
+
+  .containerBox {
+    min-width: 210px;
+    max-width: 350px;
+    grid-template-columns: 1fr;
+
+    width: 100%;
   }
 }

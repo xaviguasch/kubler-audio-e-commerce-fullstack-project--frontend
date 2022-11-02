@@ -14,3 +14,10 @@
     gap: 120px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .ProductDisplay {
+    gap: 160px;
+  }
+}

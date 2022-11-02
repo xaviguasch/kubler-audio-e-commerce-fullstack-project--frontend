@@ -37,3 +37,14 @@
     gap: 11px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .PDAlsoLike {
+    gap: 64px;
+  }
+
+  .list {
+    gap: 30px;
+  }
+}

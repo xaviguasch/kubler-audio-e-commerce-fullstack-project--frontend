@@ -36,3 +36,7 @@
     grid-area: c;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+}

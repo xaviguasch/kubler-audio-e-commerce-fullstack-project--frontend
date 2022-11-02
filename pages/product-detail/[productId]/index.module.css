@@ -21,6 +21,20 @@
 @media (min-width: 600px) {
   .ProductDetailPage {
     padding-top: 32px;
-    padding-bottom: 0;
+    padding-bottom: 120px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .ProductDetailPage {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+
+  .container {
+    margin-top: 56px;
+
+    gap: 160px;
   }
 }
