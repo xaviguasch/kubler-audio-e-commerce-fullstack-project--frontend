@@ -66,3 +66,31 @@
     margin-top: 48px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .Footer {
+    grid-template-areas:
+      'title nav'
+      'copyText .'
+      'copyText iconsGroupContainer'
+      'copyRight .';
+
+    row-gap: 36px;
+
+    padding-top: 75px;
+    padding-bottom: 48px;
+  }
+
+  .copyText {
+    max-width: 540px;
+  }
+
+  .iconsGroupContainer ul {
+    justify-content: end;
+  }
+
+  .copyRight {
+    margin-top: 20px;
+  }
+}

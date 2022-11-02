@@ -31,7 +31,7 @@ function Navbar({ position }) {
         </li>
         <li>
           <Link href='/products/earphones'>
-            <a className='nav-link'>Headphones</a>
+            <a className='nav-link'>Earphones</a>
           </Link>
         </li>
       </ul>
