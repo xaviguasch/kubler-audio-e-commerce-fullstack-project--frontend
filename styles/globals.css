@@ -59,6 +59,7 @@
   --clr-black-more-diluted-text: hsla(0, 0%, 0%, 0.5);
   --clr-white-semi-diluted-text: hsla(0, 0%, 100%, 0.75);
   --clr-white-diluted-text: hsla(0, 0%, 100%, 0.5);
+  --clr-white-very-diluted-text: hsla(0, 0%, 100%, 0.2);
 
   /* Elements */
   --clr-grey-el: hsla(0, 0%, 95%, 1);

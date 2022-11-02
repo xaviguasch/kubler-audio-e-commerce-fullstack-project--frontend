@@ -37,3 +37,18 @@
     gap: 34px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .nav_header .hamburgerContainer {
+    display: none;
+  }
+
+  .nav_header .linkList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 34px;
+  }
+}

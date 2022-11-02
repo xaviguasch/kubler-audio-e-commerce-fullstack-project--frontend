@@ -6,6 +6,8 @@
   align-items: center;
   padding-top: 28px;
   padding-bottom: 28px;
+
+  position: relative;
 }
 
 .logo {
@@ -28,8 +30,37 @@
 
 /* Tablet */
 @media (min-width: 600px) {
+  .Header::after {
+    content: '';
+    width: calc(100% - 80px);
+    height: 1px;
+    background: var(--clr-white);
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0;
+    left: calc(h-padding);
+  }
+
   .logo {
     margin-left: 42px;
     margin-right: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .Header {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .Header::after {
+    width: calc(100% - 160px);
+  }
+
+  .logo {
+    order: -1;
+    margin-left: unset;
+    margin-right: unset;
   }
 }
