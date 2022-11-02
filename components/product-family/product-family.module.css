@@ -20,4 +20,8 @@
   .ProductFamily {
     padding-bottom: 160px;
   }
+
+  .PFContainer {
+    gap: 164px;
+  }
 }

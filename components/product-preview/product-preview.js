@@ -17,14 +17,16 @@ function ProductPreview({ ppData }) {
           <img src={images.desktop} alt='' />
         </picture>
       </div>
-      <div className={classes.copy}>
-        {tag && <span className={classes.PPTag}>{tag}</span>}
-        <h2 className='title'>{name}</h2>
-        <p className='text'>{description}</p>
+      <div className={classes.copyContainer}>
+        <div className={classes.copy}>
+          {tag && <span className={classes.PPTag}>{tag}</span>}
+          <h2 className='title'>{name}</h2>
+          <p className='text'>{description}</p>
 
-        <Link href={`/product-detail/${slug}`}>
-          <a className='button button--orange-matte'>See product</a>
-        </Link>
+          <Link href={`/product-detail/${slug}`}>
+            <a className='button button--orange-matte'>See product</a>
+          </Link>
+        </div>
       </div>
     </li>
   )

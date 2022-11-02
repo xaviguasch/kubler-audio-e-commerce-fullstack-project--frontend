@@ -39,3 +39,35 @@
     margin-bottom: 8px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .ProductPreview {
+    flex-direction: row;
+    gap: unset;
+  }
+
+  .imageContainer {
+    flex: 1 1 0;
+  }
+  .ProductPreview:nth-child(even) .imageContainer {
+    order: 1;
+  }
+
+  .copyContainer {
+    flex: 1 1 0;
+  }
+
+  .copy {
+    align-items: flex-start;
+
+    text-align: left;
+
+    margin-left: 64px;
+  }
+
+  .ProductPreview:nth-child(even) .copy {
+    margin-left: unset;
+    margin-right: 64px;
+  }
+}
