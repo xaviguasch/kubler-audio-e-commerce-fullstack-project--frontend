@@ -18,3 +18,10 @@
     padding-bottom: 96px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .SectionHeader {
+    padding-top: 98px;
+  }
+}

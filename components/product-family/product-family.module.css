@@ -1,4 +1,5 @@
 .ProductFamily {
+  padding-bottom: 120px;
 }
 
 .PFContainer {
@@ -16,4 +17,7 @@
 
 /* Tablet */
 @media (min-width: 600px) {
+  .ProductFamily {
+    padding-bottom: 160px;
+  }
 }
