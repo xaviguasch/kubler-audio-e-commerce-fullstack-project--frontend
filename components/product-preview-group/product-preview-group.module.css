@@ -20,3 +20,14 @@
     padding-top: 120px;
   }
 }
+
+/* Desktop */
+@media (min-width: 900px) {
+  .ProductPreviewGroup {
+    padding-top: 160px;
+  }
+
+  .PPGList {
+    gap: 160px;
+  }
+}
