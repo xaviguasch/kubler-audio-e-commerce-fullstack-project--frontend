@@ -1,11 +1,61 @@
 .Navbar {
 }
 
+.hamburgerContainer {
+  cursor: pointer;
+}
+
 .nav_header {
 }
 
 .nav_header .linkList {
   display: none;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.nav_header .modalLinkList {
+  background: var(--clr-white);
+
+  position: absolute;
+  top: 80px;
+  left: 0;
+
+  animation: slide-in 1000ms;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  padding: 48px 0;
+
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  width: 100%;
+
+  z-index: 10;
+}
+
+.nav_header .modalLinkList :global(.nav-link) {
+  color: var(--clr-black);
+
+  font-size: var(--fs-15);
+}
+
+.nav_header .modalLinkList :global(.nav-link):hover,
+.nav_header .modalLinkList :global(.nav-link):focus {
+  color: var(--clr-orange-matte-el);
+  transition: all 350ms linear;
 }
 
 /* Styles applied when the Navbar is positioned in the Footer */
@@ -35,6 +85,10 @@
     justify-content: flex-start;
 
     gap: 34px;
+  }
+
+  .nav_header .modalLinkList :global(.nav-link) {
+    font-size: var(--fs-24);
   }
 }
 

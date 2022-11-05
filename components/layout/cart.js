@@ -6,7 +6,7 @@ import CartItem from './cart-item'
 
 import classes from './cart.module.css'
 
-function Cart({ isOpen, cartModalHandler, dummyData }) {
+function Cart({ isOpen, modalCartHandler, dummyData }) {
   // Check if document is finally loaded
 
   console.log(dummyData)
@@ -16,7 +16,7 @@ function Cart({ isOpen, cartModalHandler, dummyData }) {
   // HARDCODED DATA, PROVISIONAL!!!!
 
   return (
-    <div className={classes.Cart} onClick={cartModalHandler}>
+    <div className={classes.Cart} onClick={modalCartHandler}>
       <div className={classes.container}>
         <div className={classes.upper}>
           <span className='title title--xs'>Cart (3)</span>
@@ -38,6 +38,7 @@ function Cart({ isOpen, cartModalHandler, dummyData }) {
               className='button button--orange-matte'
               onClick={(e) => {
                 e.stopPropagation()
+                cartModalHandler()
               }}
             >
               Checkout

@@ -18,17 +18,17 @@ function Layout(props) {
     }
   }
 
-  const cartModalHandler = () => {
+  const modalCartHandler = () => {
     setIsOpen(!isOpen)
   }
 
   return (
     <Fragment>
-      <Header cartModalHandler={cartModalHandler} />
+      <Header modalCartHandler={modalCartHandler} />
       {isOpen && (
         <Cart
           isOpen={isOpen}
-          cartModalHandler={cartModalHandler}
+          modalCartHandler={modalCartHandler}
           dummyData={props.dummyData}
         />
       )}
