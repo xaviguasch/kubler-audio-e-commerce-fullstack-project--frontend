@@ -1,12 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 
 import classes from './navbar.module.css'
 
 import Link from 'next/link'
 
+import { CartItemsContext } from '../../context/CartItemsProvider'
+
 import HamburgerSVG from '../../public/assets/icons/icon-hamburger.svg'
 
 function Navbar({ position, onHandleNavOpen, mobileNavOpen }) {
+  // getting props through context, REVISE!!!!
+  const { cartItems, setCartItems } = useContext(CartItemsContext)
+
   const handleNavBtnClick = () => {
     onHandleNavOpen(true)
   }
