@@ -254,6 +254,16 @@ ul {
   cursor: pointer;
 }
 
+.button:disabled {
+  border: var(--clr-dark-el);
+  background: var(--clr-dark-el);
+  cursor: not-allowed;
+}
+.button:disabled:hover,
+.button:disabled:focus {
+  background: var(--clr-greyed-input-el);
+}
+
 .button--orange-matte {
   background: var(--clr-orange-matte-el);
   color: var(--clr-white);

@@ -1,23 +1,32 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 
 import classes from './pd-main.module.css'
 
 import { CartItemsContext } from '../../context/CartItemsProvider'
 
 function PDMain({ productInfo }) {
+  const [isItemInCart, setIsItemInCart] = useState(false)
+
   const { name, image, isItNew, price, description } = productInfo
 
-  console.log(productInfo)
-
-  // getting props through context, REVISE!!!!
   const { cartItems, setCartItems } = useContext(CartItemsContext)
 
   const addToCartBtnHandler = (e) => {
     e.preventDefault()
-    const nextCartItems = [...cartItems]
+    if (!isItemInCart) {
+      const nextCartItems = [...cartItems]
 
-    setCartItems([...nextCartItems, productInfo])
+      setCartItems([...nextCartItems, productInfo])
+      setIsItemInCart(true)
+    }
   }
+
+  // Check if the item is already in cart and disables the BUY button if so
+  useEffect(() => {
+    if (cartItems.find((el) => el.id === productInfo.id)) {
+      setIsItemInCart(true)
+    }
+  }, [])
 
   return (
     <div className={classes.PDMain}>
@@ -39,8 +48,12 @@ function PDMain({ productInfo }) {
 
         <div>
           <form action=''>
-            <button className='button button--orange-matte' onClick={addToCartBtnHandler}>
-              Add to Cart
+            <button
+              className='button button--orange-matte'
+              onClick={addToCartBtnHandler}
+              disabled={isItemInCart}
+            >
+              {isItemInCart ? 'Already In Cart' : 'Add to Cart'}
             </button>
           </form>
         </div>
