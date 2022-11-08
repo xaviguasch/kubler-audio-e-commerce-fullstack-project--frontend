@@ -18,7 +18,7 @@ function Cart({ isOpen, modalCartHandler, dummyData }) {
     <div className={classes.Cart} onClick={modalCartHandler}>
       <div className={classes.container}>
         <div className={classes.upper}>
-          <span className='title title--xs'>Cart (3)</span>
+          <span className='title title--xs'>Cart ({cartItems.length})</span>
           <button className={classes.btn}>Remove All</button>
         </div>
 

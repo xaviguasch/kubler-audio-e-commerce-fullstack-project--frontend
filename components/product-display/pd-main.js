@@ -21,7 +21,7 @@ function PDMain({ productInfo }) {
     }
   }
 
-  // Check if the item is already in cart and disables the BUY button if so
+  // Checks if the item is already in cart and disables the BUY button if so
   useEffect(() => {
     if (cartItems.find((el) => el.id === productInfo.id)) {
       setIsItemInCart(true)
