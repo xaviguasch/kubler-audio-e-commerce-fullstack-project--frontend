@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 
 import classes from './pd-main.module.css'
 
+import { CartItemsContext } from '../../context/CartItemsProvider'
+
 function PDMain({ productInfo }) {
   const { name, image, isItNew, price, description } = productInfo
+
+  console.log(productInfo)
+
+  // getting props through context, REVISE!!!!
+  const { cartItems, setCartItems } = useContext(CartItemsContext)
+
+  const addToCartBtnHandler = (e) => {
+    e.preventDefault()
+    const nextCartItems = [...cartItems]
+
+    setCartItems([...nextCartItems, productInfo])
+  }
 
   return (
     <div className={classes.PDMain}>
@@ -25,7 +39,9 @@ function PDMain({ productInfo }) {
 
         <div>
           <form action=''>
-            <button className='button button--orange-matte'>Add to Cart</button>
+            <button className='button button--orange-matte' onClick={addToCartBtnHandler}>
+              Add to Cart
+            </button>
           </form>
         </div>
       </div>
