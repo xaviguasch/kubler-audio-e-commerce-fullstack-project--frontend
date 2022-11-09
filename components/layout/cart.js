@@ -44,15 +44,7 @@ function Cart({ isOpen, modalCartHandler, dummyData }) {
           </div>
 
           <Link href='/checkout'>
-            <a
-              className='button button--orange-matte'
-              onClick={(e) => {
-                e.stopPropagation()
-                cartModalHandler()
-              }}
-            >
-              Checkout
-            </a>
+            <a className='button button--orange-matte'>Checkout</a>
           </Link>
         </div>
       </div>

@@ -17,11 +17,7 @@ function CartItem({ data, location }) {
         </div>
       </div>
       <div className={classes.right}>
-        {location === 'checkout' ? (
-          <span>x2</span>
-        ) : (
-          <span className='box-units'>1x</span>
-        )}
+        <span className='box-units'>1x</span>
       </div>
     </div>
   )
