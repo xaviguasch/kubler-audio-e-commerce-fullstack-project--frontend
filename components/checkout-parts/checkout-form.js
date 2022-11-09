@@ -7,7 +7,7 @@ function checkoutForm() {
     <div className={classes.checkoutForm}>
       <h2 className='title'>Checkout</h2>
 
-      <form className={classes.formCheckout}>
+      <div className={classes.formContainer}>
         <div className={classes.formSection}>
           <h3 className='title title--form-section'>Billing Details</h3>
 
@@ -109,61 +109,44 @@ function checkoutForm() {
 
           <div className={classes.formGroup}>
             <div className={classes.formInputAndLabel}>
-              <span className={classes.radioLabel}>Payment Method</span>
-
-              <div>
-                <input
-                  type='radio'
-                  name='payment-method'
-                  id='eMoney'
-                  value='eMoney'
-                  checked={'eMoney'}
-                />
-                <label htmlFor='eMoney' className={classes.radioLabelOption}>
-                  e-Money
-                </label>
-              </div>
-              <div>
-                <input
-                  type='radio'
-                  name='payment-method'
-                  id='cash'
-                  value='cash'
-                  checked={'cash'}
-                />
-                <label htmlFor='cash' className={classes.radioLabelOption}>
-                  Cash on Delivery
-                </label>
-              </div>
-            </div>
-
-            <div className={classes.formInputAndLabel}>
-              <label className='label' htmlFor='eMoneyNumber'>
-                e-Money Number
+              <label className='label' htmlFor='cardNumber'>
+                Card Number
               </label>
               <input
                 type='text'
                 className={classes.inputCheckout}
-                id='eMoneyNumber'
-                placeholder='238521993
+                id='cardNumber'
+                placeholder='4604299379994544
 '
               />
             </div>
 
             <div className={classes.formInputAndLabel}>
-              <label className='label' htmlFor='eMoneyPin'>
-                e-Money Pin
+              <label className='label' htmlFor='cvv'>
+                CVV
               </label>
               <input
                 type='text'
                 className={classes.inputCheckout}
-                id='eMoneyPin'
+                id='cvv'
                 placeholder='6891'
+              />
+            </div>
+
+            <div className={classes.formInputAndLabel}>
+              <label className='label' htmlFor='creditCardDate'>
+                Expire Date
+              </label>
+              <input
+                type='text'
+                className={classes.inputCheckout}
+                id='creditCardDate'
+                placeholder='MM/YY'
               />
             </div>
           </div>
         </div>
-      </form>
+      </div>
     </div>
   )
 }

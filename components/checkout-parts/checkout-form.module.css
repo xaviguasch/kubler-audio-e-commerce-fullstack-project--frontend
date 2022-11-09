@@ -16,7 +16,7 @@
   border-radius: 8px;
 }
 
-.formCheckout {
+.formContainer {
   composes: flex--col--stretch from global;
 
   gap: 32px;
@@ -47,13 +47,4 @@
 .inputCheckout:focus {
   border: solid 1px var(--clr-orange-matte-el);
   outline: none;
-}
-
-.radioLabel {
-  composes: label from global;
-}
-.radioLabelOption {
-  composes: label from global;
-
-  font-size: var(--fs-14);
 }

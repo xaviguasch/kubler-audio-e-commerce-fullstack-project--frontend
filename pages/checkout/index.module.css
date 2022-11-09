@@ -5,7 +5,7 @@
   padding-bottom: 96px;
 }
 
-.checkoutLayout {
+.formCheckoutWrapper {
   composes: flex--col--stretch from global;
 
   gap: 32px;

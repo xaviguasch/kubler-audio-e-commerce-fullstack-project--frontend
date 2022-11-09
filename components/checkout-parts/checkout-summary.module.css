@@ -34,3 +34,15 @@
 .totalTag {
   text-transform: uppercase;
 }
+
+.price {
+  composes: price from global;
+
+  letter-spacing: unset;
+}
+
+.priceOrange {
+  composes: price from global;
+
+  color: var(--clr-orange-matte-el);
+}

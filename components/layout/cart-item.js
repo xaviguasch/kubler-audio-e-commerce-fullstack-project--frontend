@@ -4,7 +4,11 @@ import classes from './cart-item.module.css'
 
 function CartItem({ data, location }) {
   return (
-    <div className={classes.CartItem}>
+    <div
+      className={`${classes.CartItem}  ${
+        location === 'checkout' ? classes.checkout : ''
+      }`}
+    >
       <div className={classes.left}>
         <div className={classes.imageContainer}>
           <img src={data.image.mobile} alt={data.name} />

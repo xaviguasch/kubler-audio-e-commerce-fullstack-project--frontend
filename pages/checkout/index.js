@@ -29,9 +29,18 @@ const Checkout = ({ dummyProducts }) => {
         <CheckoutConfirmation />
       ) : (
         <div className={classes.checkoutLayout}>
-          <CheckoutForm />
+          <form action='' className={classes.formCheckoutWrapper}>
+            <CheckoutForm />
 
-          <CheckoutSummary dummyProducts={dummyProducts} isPaidHandler={isPaidHandler} />
+            <CheckoutSummary
+              dummyProducts={dummyProducts}
+              isPaidHandler={isPaidHandler}
+            />
+
+            <button className='button button--orange-matte' type='submit'>
+              Continue & pay
+            </button>
+          </form>
         </div>
       )}
     </div>

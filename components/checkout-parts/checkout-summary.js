@@ -9,8 +9,6 @@ import { CartItemsContext } from '../../context/CartItemsProvider'
 function CheckoutSummary({ dummyProducts, isPaidHandler }) {
   const { cartItems, setCartItems } = useContext(CartItemsContext)
 
-  console.log(cartItems)
-
   const totalPrice = cartItems.reduce((acc, currV) => acc + currV.price, 0)
 
   const shipping = 50
@@ -31,31 +29,31 @@ function CheckoutSummary({ dummyProducts, isPaidHandler }) {
         <div className={classes.totalSubGroup}>
           <div className={classes.total}>
             <p className={classes.totalTag}>Total</p>
-            <p className='price'>
+            <p className={classes.price}>
               € {totalPrice.toLocaleString('en', { useGrouping: true })}
             </p>
           </div>
           <div className={classes.total}>
             <p className={classes.totalTag}>Shipping</p>
-            <p className='price'>
+            <p className={classes.price}>
               € {shipping.toLocaleString('en', { useGrouping: true })}
             </p>
           </div>
           <div className={classes.total}>
             <p className={classes.totalTag}>Vat (included)</p>
-            <p className='price'>€ {vat.toLocaleString('en', { useGrouping: true })}</p>
+            <p className={classes.price}>
+              € {vat.toLocaleString('en', { useGrouping: true })}
+            </p>
           </div>
         </div>
 
         <div className={classes.total}>
           <p className={classes.totalTag}>Grand Total</p>
-          <p className='price'>
+          <p className={classes.priceOrange}>
             € {grandTotal.toLocaleString('en', { useGrouping: true })}
           </p>
         </div>
       </div>
-
-      <button className='button button--orange-matte'>Continue & pay</button>
     </div>
   )
 }

@@ -27,3 +27,11 @@
   letter-spacing: 0px;
   color: var(--clr-black-more-diluted-text);
 }
+
+.checkout :global(.title) {
+  font-size: var(--fs-15);
+}
+
+.checkout :global(.box-units) {
+  color: var(--clr-black-more-diluted-text);
+}
