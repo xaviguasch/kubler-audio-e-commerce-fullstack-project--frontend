@@ -249,6 +249,8 @@ ul {
   line-height: 1.36;
   padding: 13px 27px;
 
+  text-align: center;
+
   display: inline-block;
 
   cursor: pointer;

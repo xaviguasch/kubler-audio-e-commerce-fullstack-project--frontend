@@ -25,8 +25,10 @@ function PDMain({ productInfo }) {
   useEffect(() => {
     if (cartItems.find((el) => el.id === productInfo.id)) {
       setIsItemInCart(true)
+    } else {
+      setIsItemInCart(false)
     }
-  }, [])
+  }, [cartItems])
 
   return (
     <div className={classes.PDMain}>
