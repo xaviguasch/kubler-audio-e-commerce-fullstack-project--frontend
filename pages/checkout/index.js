@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 
 import { useRouter } from 'next/router'
 
 import classes from './index.module.css'
 
 import Link from 'next/link'
+
+import { CartItemsContext } from '../../context/CartItemsProvider'
 
 import CheckoutForm from '../../components/checkout-parts/checkout-form'
 import CheckoutSummary from '../../components/checkout-parts/checkout-summary'
@@ -14,30 +16,44 @@ import { DUMMY_PRODUCTS } from '../../dummy-data'
 
 const Checkout = ({ dummyProducts }) => {
   const [isPaid, setIsPaid] = useState(false)
+  const [grandTotal, setGrandTotal] = useState(0)
 
-  const isPaidHandler = () => {
-    setIsPaid(!isPaid)
-  }
+  const { cartItems, setCartItems } = useContext(CartItemsContext)
 
   const router = useRouter()
 
+  const formSubmitHandler = (e) => {
+    e.preventDefault()
+
+    setIsPaid(true)
+  }
+
   return (
     <div className={`${classes.Checkout} h-padding`}>
-      <p>go back placeholder</p>
+      <button
+        className='button button--empty'
+        type='button'
+        onClick={() => router.back()}
+      >
+        Go Back{' '}
+      </button>
 
       {isPaid ? (
-        <CheckoutConfirmation />
+        <CheckoutConfirmation grandTotal={grandTotal} />
+      ) : cartItems.length === 0 ? (
+        <h2>Empty Cart (provisional)</h2>
       ) : (
         <div className={classes.checkoutLayout}>
           <form action='' className={classes.formCheckoutWrapper}>
             <CheckoutForm />
 
-            <CheckoutSummary
-              dummyProducts={dummyProducts}
-              isPaidHandler={isPaidHandler}
-            />
+            <CheckoutSummary setGrandTotal={setGrandTotal} />
 
-            <button className='button button--orange-matte' type='submit'>
+            <button
+              className='button button--orange-matte'
+              type='submit'
+              onClick={formSubmitHandler}
+            >
               Continue & pay
             </button>
           </form>

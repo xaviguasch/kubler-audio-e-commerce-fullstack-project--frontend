@@ -6,14 +6,16 @@ import CartItem from '../layout/cart-item'
 
 import { CartItemsContext } from '../../context/CartItemsProvider'
 
-function CheckoutSummary({ dummyProducts, isPaidHandler }) {
+function CheckoutSummary({ setGrandTotal }) {
   const { cartItems, setCartItems } = useContext(CartItemsContext)
 
   const totalPrice = cartItems.reduce((acc, currV) => acc + currV.price, 0)
 
   const shipping = 50
   const vat = totalPrice * 0.2
-  const grandTotal = (totalPrice + vat + shipping).toFixed(1)
+  const grandTotal = Number(totalPrice + vat + shipping).toFixed(1)
+
+  setGrandTotal(grandTotal)
 
   return (
     <div className={classes.CheckoutSummary}>
@@ -50,7 +52,7 @@ function CheckoutSummary({ dummyProducts, isPaidHandler }) {
         <div className={classes.total}>
           <p className={classes.totalTag}>Grand Total</p>
           <p className={classes.priceOrange}>
-            € {grandTotal.toLocaleString('en', { useGrouping: true })}
+            € {new Intl.NumberFormat().format(grandTotal)}
           </p>
         </div>
       </div>

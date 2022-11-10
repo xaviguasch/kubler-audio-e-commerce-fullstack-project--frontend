@@ -596,7 +596,7 @@ export const COPY_DATA = {
   },
   footerCopy: {
     title: 'KublerAudio',
-    copy: "KublerAudio is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we're open 7 days a week.",
+    copy: "KublerAudio is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Due to the limited nature of supplies, each customer will only be able to buy one of instance of every product. Come and visit our demo facility - we're open 7 days a week.",
     copyright: 'Copyright 2022. All Rights Reserved',
   },
   icons: {
