@@ -51,7 +51,10 @@ const Checkout = ({ dummyProducts }) => {
       {isPaid ? (
         <CheckoutConfirmation grandTotal={grandTotal} />
       ) : cartItems.length === 0 ? (
-        <h2>Empty Cart (provisional)</h2>
+        <div className={classes.emptyCart}>
+          <h2 className={classes.emptyCartTitle}>Empty Cart</h2>
+          <span className={classes.emptyCartSpan}>please add products</span>
+        </div>
       ) : (
         <div className={classes.checkoutLayout}>
           <form className={classes.formCheckoutWrapper}>

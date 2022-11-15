@@ -11,6 +11,31 @@
   gap: 32px;
 }
 
+.emptyCart {
+  background: var(--clr-white);
+
+  margin-top: 24px;
+
+  composes: flex--col--left from global;
+  gap: 16px;
+
+  padding: 24px;
+}
+
+.emptyCartTitle {
+  composes: title--s from global;
+  text-transform: uppercase;
+  letter-spacing: unset;
+}
+.emptyCartSpan {
+  composes: title--xs from global;
+  text-transform: uppercase;
+  letter-spacing: unset;
+  font-weight: var(--fw-bold);
+
+  color: var(--clr-orange-matte-el);
+}
+
 /* Checkout form styles */
 
 .checkoutForm {
