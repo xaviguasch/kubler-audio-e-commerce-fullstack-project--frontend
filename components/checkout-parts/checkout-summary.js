@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 
 import classes from './checkout-summary.module.css'
 
@@ -15,7 +15,9 @@ function CheckoutSummary({ setGrandTotal }) {
   const vat = totalPrice * 0.2
   const grandTotal = Number(totalPrice + vat + shipping).toFixed(1)
 
-  setGrandTotal(grandTotal)
+  useEffect(() => {
+    setGrandTotal(grandTotal)
+  }, [grandTotal])
 
   return (
     <div className={classes.CheckoutSummary}>
