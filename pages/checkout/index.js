@@ -63,7 +63,7 @@ const Checkout = ({ dummyProducts }) => {
 
               <div className={classes.formContainer}>
                 <div className={classes.formSection}>
-                  <h3 className='title title--form-section'>Billing Details</h3>
+                  <h3 className='title--form-section'>Billing Details</h3>
 
                   <div className={classes.formGroup}>
                     <div className={classes.formInputAndLabel}>
@@ -117,7 +117,7 @@ const Checkout = ({ dummyProducts }) => {
                 </div>
 
                 <div className={classes.formSection}>
-                  <h3 className='title title--form-section'>Shipping Info</h3>
+                  <h3 className='title--form-section'>Shipping Info</h3>
 
                   <div className={classes.formGroup}>
                     <div className={classes.formInputAndLabel}>
@@ -187,7 +187,7 @@ const Checkout = ({ dummyProducts }) => {
                 </div>
 
                 <div className={classes.formSection}>
-                  <h3 className='title title--form-section'>Payment Details</h3>
+                  <h3 className='title--form-section'>Payment Details</h3>
                   <div className={classes.formGroup}>
                     <div className={classes.formInputAndLabel}>
                       <label className='label' htmlFor='cardNumber'>

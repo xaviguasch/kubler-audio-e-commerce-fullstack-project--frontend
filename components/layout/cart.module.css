@@ -1,5 +1,7 @@
 .Cart {
   composes: overlay from global;
+
+  position: relative;
 }
 
 .container {
@@ -7,6 +9,8 @@
   composes: flex--col--stretch from global;
 
   gap: 32px;
+
+  max-width: 375px;
 }
 
 .upper {
@@ -44,3 +48,7 @@
 .totalTag {
   text-transform: uppercase;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */

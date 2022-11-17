@@ -8,7 +8,7 @@ import CartItem from './cart-item'
 
 import classes from './cart.module.css'
 
-function Cart({ isOpen, modalCartHandler, dummyData }) {
+function Cart({ modalCartHandler }) {
   const { cartItems, setCartItems } = useContext(CartItemsContext)
 
   const totalPrice = cartItems.reduce((acc, currV) => acc + currV.price, 0)

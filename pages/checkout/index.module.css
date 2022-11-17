@@ -88,3 +88,17 @@
   border: solid 1px var(--clr-orange-matte-el);
   outline: none;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .Checkout {
+    background: var(--clr-grey-el);
+
+    padding-top: 48px;
+    padding-bottom: 116px;
+  }
+}

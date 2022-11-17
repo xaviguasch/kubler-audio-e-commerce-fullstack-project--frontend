@@ -62,7 +62,7 @@
   --clr-white-very-diluted-text: hsla(0, 0%, 100%, 0.2);
 
   /* Elements */
-  --clr-grey-el: hsla(0, 0%, 95%, 1);
+  --clr-grey-el: hsl(0, 0%, 95%);
   --clr-orange-matte-el: hsla(22, 65%, 57%, 1);
   --clr-orange-diluted-el: hsla(22, 93%, 75%, 1);
   --clr-black-dark-el: hsla(0, 0%, 6%, 1);
@@ -136,6 +136,10 @@ ul {
 }
 
 .title--form-section {
+  font-weight: var(--fw-bold);
+  line-height: 1.35;
+  text-transform: uppercase;
+
   font-size: var(--fs-13);
   letter-spacing: 0.93px;
   color: var(--clr-orange-matte-el);
@@ -418,6 +422,15 @@ input::placeholder {
 /* ================== */
 /* MEDIA QUERIES */
 /* ================== */
+
+/* Mobile to Tablet, inbetween */
+@media (min-width: 430px) {
+  .modal-card {
+    right: 40px;
+    left: unset;
+    transform: unset;
+  }
+}
 
 /* Tablet */
 @media (min-width: 600px) {
