@@ -65,7 +65,7 @@ const Checkout = ({ dummyProducts }) => {
                 <div className={classes.formSection}>
                   <h3 className='title--form-section'>Billing Details</h3>
 
-                  <div className={classes.formGroup}>
+                  <div className={`${classes.formGroup} ${classes.billingGroup}`}>
                     <div className={classes.formInputAndLabel}>
                       <label className='label' htmlFor='name'>
                         Name
@@ -119,7 +119,7 @@ const Checkout = ({ dummyProducts }) => {
                 <div className={classes.formSection}>
                   <h3 className='title--form-section'>Shipping Info</h3>
 
-                  <div className={classes.formGroup}>
+                  <div className={`${classes.formGroup}`}>
                     <div className={classes.formInputAndLabel}>
                       <label className='label' htmlFor='address'>
                         Your Address
@@ -136,59 +136,61 @@ const Checkout = ({ dummyProducts }) => {
                       />
                     </div>
 
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='zipcode'>
-                        ZIP Code
-                      </label>
-                      <input
-                        type='text'
-                        className={classes.inputCheckout}
-                        id='zipcode'
-                        placeholder='10001'
-                        value={zipcode}
-                        onChange={(e) => {
-                          setZipcode(e.target.value)
-                        }}
-                      />
-                    </div>
+                    <div className={`${classes.formGroup} ${classes.shippingGroup}`}>
+                      <div className={classes.formInputAndLabel}>
+                        <label className='label' htmlFor='zipcode'>
+                          ZIP Code
+                        </label>
+                        <input
+                          type='text'
+                          className={classes.inputCheckout}
+                          id='zipcode'
+                          placeholder='10001'
+                          value={zipcode}
+                          onChange={(e) => {
+                            setZipcode(e.target.value)
+                          }}
+                        />
+                      </div>
 
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='city'>
-                        City
-                      </label>
-                      <input
-                        type='text'
-                        className={classes.inputCheckout}
-                        id='city'
-                        placeholder='New York'
-                        value={city}
-                        onChange={(e) => {
-                          setCity(e.target.value)
-                        }}
-                      />
-                    </div>
+                      <div className={classes.formInputAndLabel}>
+                        <label className='label' htmlFor='city'>
+                          City
+                        </label>
+                        <input
+                          type='text'
+                          className={classes.inputCheckout}
+                          id='city'
+                          placeholder='New York'
+                          value={city}
+                          onChange={(e) => {
+                            setCity(e.target.value)
+                          }}
+                        />
+                      </div>
 
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='country'>
-                        Country
-                      </label>
-                      <input
-                        type='text'
-                        className={classes.inputCheckout}
-                        id='country'
-                        placeholder='United States'
-                        value={country}
-                        onChange={(e) => {
-                          setCountry(e.target.value)
-                        }}
-                      />
+                      <div className={classes.formInputAndLabel}>
+                        <label className='label' htmlFor='country'>
+                          Country
+                        </label>
+                        <input
+                          type='text'
+                          className={classes.inputCheckout}
+                          id='country'
+                          placeholder='United States'
+                          value={country}
+                          onChange={(e) => {
+                            setCountry(e.target.value)
+                          }}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className={classes.formSection}>
                   <h3 className='title--form-section'>Payment Details</h3>
-                  <div className={classes.formGroup}>
+                  <div className={`${classes.formGroup} ${classes.cardGroup}`}>
                     <div className={classes.formInputAndLabel}>
                       <label className='label' htmlFor='cardNumber'>
                         Card Number

@@ -68,6 +68,13 @@
   gap: 16px;
 }
 
+.billingGroup,
+.shippingGroup {
+}
+
+.cardGroup {
+}
+
 .formGroup {
   display: grid;
   grid-template-columns: 1fr;
@@ -100,5 +107,18 @@
 
     padding-top: 48px;
     padding-bottom: 116px;
+  }
+
+  .billingGroup,
+  .shippingGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+  }
+
+  .cardGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
   }
 }
