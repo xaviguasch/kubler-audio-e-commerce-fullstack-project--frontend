@@ -81,3 +81,36 @@
   composes: button--orange-matte from global;
   width: 100%;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* Tablet */
+@media (min-width: 600px) {
+  .title {
+    font-size: var(--fs-32);
+
+    max-width: 270px;
+
+    padding-right: unset;
+  }
+
+  .CheckoutConfirmation {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 48px;
+
+    gap: 32px;
+  }
+
+  .copy {
+    gap: 24px;
+  }
+
+  .buttonArea {
+    margin-top: 16px;
+  }
+}
