@@ -46,3 +46,14 @@
 
   color: var(--clr-orange-matte-el);
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+/* WideScreen Monitors */
+@media (min-width: 1100px) {
+  .CheckoutSummary {
+    padding: 32px;
+  }
+}

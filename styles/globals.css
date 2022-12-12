@@ -319,6 +319,12 @@ ul {
   padding: 6px 0;
 }
 
+.button--empty:hover,
+.button--empty:focus {
+  color: var(--clr-orange-matte-el);
+  transition: all 350ms linear;
+}
+
 .icon-btn {
   cursor: pointer;
 }
@@ -494,5 +500,5 @@ input::placeholder {
 }
 
 /* WideScreen Monitors */
-@media (min-width: 1100px) {
+@media (min-width: 1150px) {
 }

@@ -5,6 +5,10 @@
   padding-bottom: 96px;
 }
 
+.checkoutTitle {
+  composes: title from global;
+}
+
 .formCheckoutWrapper {
   composes: flex--col--stretch from global;
 
@@ -130,4 +134,33 @@
 
 /* WideScreen Monitors */
 @media (min-width: 1100px) {
+  .checkoutTitle {
+    font-size: var(--fs-32);
+  }
+
+  .formCheckoutWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-top: 32px;
+  }
+
+  .checkoutForm {
+    flex: 1;
+
+    gap: 40px;
+
+    margin-top: unset;
+    padding: 54px 48px;
+  }
+
+  .formContainer {
+    gap: 52px;
+  }
+
+  .checkoutSummaryContainer {
+    flex: 1;
+    max-width: 350px;
+  }
 }

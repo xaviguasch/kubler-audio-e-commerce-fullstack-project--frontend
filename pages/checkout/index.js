@@ -59,7 +59,7 @@ const Checkout = ({ dummyProducts }) => {
         <div className={classes.checkoutLayout}>
           <form className={classes.formCheckoutWrapper}>
             <div className={classes.checkoutForm}>
-              <h2 className='title'>Checkout</h2>
+              <h2 className={classes.checkoutTitle}>Checkout</h2>
 
               <div className={classes.formContainer}>
                 <div className={classes.formSection}>
