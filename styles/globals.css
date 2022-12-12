@@ -492,3 +492,7 @@ input::placeholder {
     right: 80px;
   }
 }
+
+/* WideScreen Monitors */
+@media (min-width: 1100px) {
+}

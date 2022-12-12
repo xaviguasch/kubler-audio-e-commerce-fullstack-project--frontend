@@ -243,15 +243,17 @@ const Checkout = ({ dummyProducts }) => {
               </div>
             </div>
 
-            <CheckoutSummary setGrandTotal={setGrandTotal} />
+            <div className={classes.checkoutSummaryContainer}>
+              <CheckoutSummary setGrandTotal={setGrandTotal} />
 
-            <button
-              className='button button--orange-matte'
-              type='submit'
-              onClick={formSubmitHandler}
-            >
-              Continue & pay
-            </button>
+              <button
+                className='button button--orange-matte'
+                type='submit'
+                onClick={formSubmitHandler}
+              >
+                Continue & pay
+              </button>
+            </div>
           </form>
         </div>
       )}
