@@ -485,4 +485,10 @@ input::placeholder {
     padding-left: 80px;
     padding-right: 80px;
   }
+
+  /* Utility styles */
+  .modal-card {
+    top: 136px;
+    right: 80px;
+  }
 }
