@@ -1,7 +1,7 @@
 .Cart {
   composes: overlay from global;
 
-  position: relative;
+  /* position: relative; */
 }
 
 .container {
