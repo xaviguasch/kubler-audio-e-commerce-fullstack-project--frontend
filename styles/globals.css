@@ -502,7 +502,7 @@ input::placeholder {
 }
 
 /* WideScreen Monitors */
-@media (min-width: 1280px) {
+@media (min-width: 1285px) {
   .h-padding {
     padding-left: unset;
     padding-right: unset;

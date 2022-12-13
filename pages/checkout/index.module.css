@@ -164,3 +164,13 @@
     max-width: 350px;
   }
 }
+
+/* WS Monitors */
+@media (min-width: 1285px) {
+  .CheckoutContainer {
+    max-width: 1110px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

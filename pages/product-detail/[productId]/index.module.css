@@ -38,3 +38,13 @@
     gap: 160px;
   }
 }
+
+/* WS Monitors */
+@media (min-width: 1285px) {
+  .ProductDetailPage {
+    max-width: 1110px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

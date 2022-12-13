@@ -37,15 +37,17 @@ function Header({ modalCartHandler }) {
 
   return (
     <header className={`${classes.Header} h-padding`}>
-      <Navbar
-        position='nav_header'
-        onHandleNavOpen={handleNavOpen}
-        mobileNavOpen={mobileNavOpen}
-      />
+      <div className={classes.HeaderContainer}>
+        <Navbar
+          position='nav_header'
+          onHandleNavOpen={handleNavOpen}
+          mobileNavOpen={mobileNavOpen}
+        />
 
-      <h2 className={classes.logo}>KublerAudio</h2>
+        <h2 className={classes.logo}>KublerAudio</h2>
 
-      <IconCartSVG className={classes.icon} onClick={modalCartHandler} />
+        <IconCartSVG className={classes.icon} onClick={modalCartHandler} />
+      </div>
     </header>
   )
 }

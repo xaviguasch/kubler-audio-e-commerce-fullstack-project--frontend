@@ -40,223 +40,225 @@ const Checkout = ({ dummyProducts }) => {
 
   return (
     <div className={`${classes.Checkout} h-padding`}>
-      <button
-        className='button button--empty'
-        type='button'
-        onClick={() => router.back()}
-      >
-        Go Back{' '}
-      </button>
+      <div className={classes.CheckoutContainer}>
+        <button
+          className='button button--empty'
+          type='button'
+          onClick={() => router.back()}
+        >
+          Go Back{' '}
+        </button>
 
-      {isPaid ? (
-        <CheckoutConfirmation grandTotal={grandTotal} />
-      ) : cartItems.length === 0 ? (
-        <div className={classes.emptyCart}>
-          <h2 className={classes.emptyCartTitle}>Empty Cart</h2>
-          <span className={classes.emptyCartSpan}>please add products</span>
-        </div>
-      ) : (
-        <div className={classes.checkoutLayout}>
-          <form className={classes.formCheckoutWrapper}>
-            <div className={classes.checkoutForm}>
-              <h2 className={classes.checkoutTitle}>Checkout</h2>
+        {isPaid ? (
+          <CheckoutConfirmation grandTotal={grandTotal} />
+        ) : cartItems.length === 0 ? (
+          <div className={classes.emptyCart}>
+            <h2 className={classes.emptyCartTitle}>Empty Cart</h2>
+            <span className={classes.emptyCartSpan}>please add products</span>
+          </div>
+        ) : (
+          <div className={classes.checkoutLayout}>
+            <form className={classes.formCheckoutWrapper}>
+              <div className={classes.checkoutForm}>
+                <h2 className={classes.checkoutTitle}>Checkout</h2>
 
-              <div className={classes.formContainer}>
-                <div className={classes.formSection}>
-                  <h3 className='title--form-section'>Billing Details</h3>
+                <div className={classes.formContainer}>
+                  <div className={classes.formSection}>
+                    <h3 className='title--form-section'>Billing Details</h3>
 
-                  <div className={`${classes.formGroup} ${classes.billingGroup}`}>
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='name'>
-                        Name
-                      </label>
-                      <input
-                        type='text'
-                        className={classes.inputCheckout}
-                        id='name'
-                        placeholder='Elliott Gould'
-                        value={name}
-                        onChange={(e) => {
-                          setName(e.target.value)
-                        }}
-                      />
-                    </div>
-
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='email'>
-                        Email Address
-                      </label>
-                      <input
-                        type='email'
-                        className={classes.inputCheckout}
-                        id='email'
-                        placeholder='elliottgould@gmail.com'
-                        value={email}
-                        onChange={(e) => {
-                          setEmail(e.target.value)
-                        }}
-                      />
-                    </div>
-
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='phone'>
-                        Phone Number
-                      </label>
-                      <input
-                        type='phone'
-                        className={classes.inputCheckout}
-                        id='phone'
-                        placeholder='+1 202-555-0136'
-                        value={phoneNumber}
-                        onChange={(e) => {
-                          setPhoneNumber(e.target.value)
-                        }}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className={classes.formSection}>
-                  <h3 className='title--form-section'>Shipping Info</h3>
-
-                  <div className={`${classes.formGroup}`}>
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='address'>
-                        Your Address
-                      </label>
-                      <input
-                        type='text'
-                        className={classes.inputCheckout}
-                        id='address'
-                        placeholder='1137 Williams Avenue'
-                        value={address}
-                        onChange={(e) => {
-                          setAddress(e.target.value)
-                        }}
-                      />
-                    </div>
-
-                    <div className={`${classes.formGroup} ${classes.shippingGroup}`}>
+                    <div className={`${classes.formGroup} ${classes.billingGroup}`}>
                       <div className={classes.formInputAndLabel}>
-                        <label className='label' htmlFor='zipcode'>
-                          ZIP Code
+                        <label className='label' htmlFor='name'>
+                          Name
                         </label>
                         <input
                           type='text'
                           className={classes.inputCheckout}
-                          id='zipcode'
-                          placeholder='10001'
-                          value={zipcode}
+                          id='name'
+                          placeholder='Elliott Gould'
+                          value={name}
                           onChange={(e) => {
-                            setZipcode(e.target.value)
+                            setName(e.target.value)
                           }}
                         />
                       </div>
 
                       <div className={classes.formInputAndLabel}>
-                        <label className='label' htmlFor='city'>
-                          City
+                        <label className='label' htmlFor='email'>
+                          Email Address
                         </label>
                         <input
-                          type='text'
+                          type='email'
                           className={classes.inputCheckout}
-                          id='city'
-                          placeholder='New York'
-                          value={city}
+                          id='email'
+                          placeholder='elliottgould@gmail.com'
+                          value={email}
                           onChange={(e) => {
-                            setCity(e.target.value)
+                            setEmail(e.target.value)
                           }}
                         />
                       </div>
 
                       <div className={classes.formInputAndLabel}>
-                        <label className='label' htmlFor='country'>
-                          Country
+                        <label className='label' htmlFor='phone'>
+                          Phone Number
                         </label>
                         <input
-                          type='text'
+                          type='phone'
                           className={classes.inputCheckout}
-                          id='country'
-                          placeholder='United States'
-                          value={country}
+                          id='phone'
+                          placeholder='+1 202-555-0136'
+                          value={phoneNumber}
                           onChange={(e) => {
-                            setCountry(e.target.value)
+                            setPhoneNumber(e.target.value)
                           }}
                         />
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div className={classes.formSection}>
-                  <h3 className='title--form-section'>Payment Details</h3>
-                  <div className={`${classes.formGroup} ${classes.cardGroup}`}>
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='cardNumber'>
-                        Card Number
-                      </label>
-                      <input
-                        type='text'
-                        className={classes.inputCheckout}
-                        id='cardNumber'
-                        placeholder='4604299379994544'
-                        value={card}
-                        onChange={(e) => {
-                          setCard(e.target.value)
-                        }}
-                      />
+                  <div className={classes.formSection}>
+                    <h3 className='title--form-section'>Shipping Info</h3>
+
+                    <div className={`${classes.formGroup}`}>
+                      <div className={classes.formInputAndLabel}>
+                        <label className='label' htmlFor='address'>
+                          Your Address
+                        </label>
+                        <input
+                          type='text'
+                          className={classes.inputCheckout}
+                          id='address'
+                          placeholder='1137 Williams Avenue'
+                          value={address}
+                          onChange={(e) => {
+                            setAddress(e.target.value)
+                          }}
+                        />
+                      </div>
+
+                      <div className={`${classes.formGroup} ${classes.shippingGroup}`}>
+                        <div className={classes.formInputAndLabel}>
+                          <label className='label' htmlFor='zipcode'>
+                            ZIP Code
+                          </label>
+                          <input
+                            type='text'
+                            className={classes.inputCheckout}
+                            id='zipcode'
+                            placeholder='10001'
+                            value={zipcode}
+                            onChange={(e) => {
+                              setZipcode(e.target.value)
+                            }}
+                          />
+                        </div>
+
+                        <div className={classes.formInputAndLabel}>
+                          <label className='label' htmlFor='city'>
+                            City
+                          </label>
+                          <input
+                            type='text'
+                            className={classes.inputCheckout}
+                            id='city'
+                            placeholder='New York'
+                            value={city}
+                            onChange={(e) => {
+                              setCity(e.target.value)
+                            }}
+                          />
+                        </div>
+
+                        <div className={classes.formInputAndLabel}>
+                          <label className='label' htmlFor='country'>
+                            Country
+                          </label>
+                          <input
+                            type='text'
+                            className={classes.inputCheckout}
+                            id='country'
+                            placeholder='United States'
+                            value={country}
+                            onChange={(e) => {
+                              setCountry(e.target.value)
+                            }}
+                          />
+                        </div>
+                      </div>
                     </div>
+                  </div>
 
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='cvv'>
-                        CVV
-                      </label>
-                      <input
-                        type='number'
-                        className={classes.inputCheckout}
-                        id='cvv'
-                        placeholder='6891'
-                        value={cvv}
-                        onChange={(e) => {
-                          setCvv(e.target.value)
-                        }}
-                      />
-                    </div>
+                  <div className={classes.formSection}>
+                    <h3 className='title--form-section'>Payment Details</h3>
+                    <div className={`${classes.formGroup} ${classes.cardGroup}`}>
+                      <div className={classes.formInputAndLabel}>
+                        <label className='label' htmlFor='cardNumber'>
+                          Card Number
+                        </label>
+                        <input
+                          type='text'
+                          className={classes.inputCheckout}
+                          id='cardNumber'
+                          placeholder='4604299379994544'
+                          value={card}
+                          onChange={(e) => {
+                            setCard(e.target.value)
+                          }}
+                        />
+                      </div>
 
-                    <div className={classes.formInputAndLabel}>
-                      <label className='label' htmlFor='creditCardDate'>
-                        Expire Date
-                      </label>
-                      <input
-                        type='text'
-                        className={classes.inputCheckout}
-                        id='creditCardDate'
-                        placeholder='MM/YY'
-                        value={expireDate}
-                        onChange={(e) => {
-                          setExpireDate(e.target.value)
-                        }}
-                      />
+                      <div className={classes.formInputAndLabel}>
+                        <label className='label' htmlFor='cvv'>
+                          CVV
+                        </label>
+                        <input
+                          type='number'
+                          className={classes.inputCheckout}
+                          id='cvv'
+                          placeholder='6891'
+                          value={cvv}
+                          onChange={(e) => {
+                            setCvv(e.target.value)
+                          }}
+                        />
+                      </div>
+
+                      <div className={classes.formInputAndLabel}>
+                        <label className='label' htmlFor='creditCardDate'>
+                          Expire Date
+                        </label>
+                        <input
+                          type='text'
+                          className={classes.inputCheckout}
+                          id='creditCardDate'
+                          placeholder='MM/YY'
+                          value={expireDate}
+                          onChange={(e) => {
+                            setExpireDate(e.target.value)
+                          }}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className={classes.checkoutSummaryContainer}>
-              <CheckoutSummary setGrandTotal={setGrandTotal} />
+              <div className={classes.checkoutSummaryContainer}>
+                <CheckoutSummary setGrandTotal={setGrandTotal} />
 
-              <button
-                className='button button--orange-matte'
-                type='submit'
-                onClick={formSubmitHandler}
-              >
-                Continue & pay
-              </button>
-            </div>
-          </form>
-        </div>
-      )}
+                <button
+                  className='button button--orange-matte'
+                  type='submit'
+                  onClick={formSubmitHandler}
+                >
+                  Continue & pay
+                </button>
+              </div>
+            </form>
+          </div>
+        )}
+      </div>
     </div>
   )
 }

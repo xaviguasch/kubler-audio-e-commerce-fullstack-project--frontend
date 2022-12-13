@@ -1,6 +1,8 @@
 .Header {
   background: var(--clr-black);
+}
 
+.HeaderContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
