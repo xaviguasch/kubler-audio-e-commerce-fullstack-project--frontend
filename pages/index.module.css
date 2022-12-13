@@ -34,3 +34,12 @@
     gap: 168px;
   }
 }
+
+/* WS Monitors */
+@media (min-width: 1285px) {
+  .container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

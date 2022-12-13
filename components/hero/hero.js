@@ -24,15 +24,17 @@ function Hero({ heroCopy }) {
   return (
     <div className={`${classes.Hero} h-padding backimageHero`}>
       <style scoped>{css}</style>
-      <div className={classes.copy}>
-        <div className='title-area'>
-          <span className='tag helper-text-diluted-white'>{heroCopy.tag}</span>
-          <h1 className='title title--l helper-text-white'>{heroCopy.productName}</h1>
+      <div className={classes.wrapper}>
+        <div className={classes.copy}>
+          <div className='title-area'>
+            <span className='tag helper-text-diluted-white'>{heroCopy.tag}</span>
+            <h1 className='title title--l helper-text-white'>{heroCopy.productName}</h1>
+          </div>
+          <p className='text helper-text-semi-diluted-white'>{heroCopy.productCopy}</p>
+          <Link href={heroCopy.url}>
+            <a className='button button--orange-matte'> {heroCopy.buttonText}</a>
+          </Link>
         </div>
-        <p className='text helper-text-semi-diluted-white'>{heroCopy.productCopy}</p>
-        <Link href={heroCopy.url}>
-          <a className='button button--orange-matte'> {heroCopy.buttonText}</a>
-        </Link>
       </div>
     </div>
   )

@@ -72,3 +72,16 @@
     width: 100%;
   }
 }
+
+/* WS Monitors */
+@media (min-width: 1300px) {
+  .PDFeatures {
+    justify-content: flex-start;
+  }
+
+  .containerFeatures {
+    max-width: 635px;
+    padding-right: unset;
+    margin-right: 125px;
+  }
+}

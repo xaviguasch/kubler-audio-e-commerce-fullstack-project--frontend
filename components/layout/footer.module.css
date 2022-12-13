@@ -1,14 +1,16 @@
 .Footer {
+  background-color: var(--clr-black);
+
+  padding-top: 52px;
+  padding-bottom: 38px;
+}
+
+.FooterContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 48px;
-
-  background-color: var(--clr-black);
-
-  padding-top: 52px;
-  padding-bottom: 38px;
 
   text-align: center;
 }
@@ -20,6 +22,11 @@
 /* Tablet */
 @media (min-width: 600px) {
   .Footer {
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  .FooterContent {
     display: grid;
 
     grid-template-columns: auto auto;
@@ -32,9 +39,6 @@
       'copyRight iconsGroupContainer';
 
     row-gap: 32px;
-
-    padding-top: 60px;
-    padding-bottom: 48px;
   }
 
   .titleArea {
@@ -70,6 +74,11 @@
 /* Desktop */
 @media (min-width: 900px) {
   .Footer {
+    padding-top: 75px;
+    padding-bottom: 48px;
+  }
+
+  .FooterContent {
     grid-template-areas:
       'title nav'
       'copyText .'
@@ -77,9 +86,6 @@
       'copyRight .';
 
     row-gap: 36px;
-
-    padding-top: 75px;
-    padding-bottom: 48px;
   }
 
   .copyText {
@@ -92,5 +98,17 @@
 
   .copyRight {
     margin-top: 20px;
+  }
+}
+
+/* WS Monitors */
+@media (min-width: 1285px) {
+  .copyText {
+    max-width: unset;
+  }
+  .FooterContent {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
