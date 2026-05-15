@@ -136,13 +136,7 @@ vercel
 # 🔮 Future Improvements
 
 - User authentication
-- Stripe integration
 - Wishlist system
-- Product filtering & search
-- CMS integration
-- Order history
-- Admin dashboard
-- Backend API integration
 - Payment processing
 - Inventory management
 
